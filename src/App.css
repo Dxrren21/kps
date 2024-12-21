@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+.app {
+  width: 100vh; 
+  height: 100vw; 
+}
+
+#kpsLogo {
+  width: 30%; 
+
+}
