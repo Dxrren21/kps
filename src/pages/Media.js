@@ -2,7 +2,7 @@ export default function Events() {
     return(
         <>
             <div>
-                EVENTNTNS
+                This is media
             </div>
 
         </>
