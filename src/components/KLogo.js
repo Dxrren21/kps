@@ -1,4 +1,4 @@
-import logo from '../assets/kpopLogo.png'
+import logo from '../assets/kpsLogo.png'
 import {useState, useEffect} from 'react'
 
 export default function Klogo() {

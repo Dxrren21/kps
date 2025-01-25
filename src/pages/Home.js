@@ -22,22 +22,22 @@ export default function Home() {
             className="flex h-[100vh] font-sans bg-home bg-cover bg-center"
           >
             <div className="basis-1/4 relative bottom-[10%]">
-              <div className="absolute rotate-90 pb-[100%] origin-left text-6xl font-extrabold text-[#2b2c59]">NOTICEBOARD</div>
+              <div className="absolute rotate-90 pb-[100%] origin-left text-6xl font-extrabold text-gray-800">NOTICEBOARD</div>
             </div>
             <div className="basis-1/2">
               <NoticeBoard />
             </div>
             <div className="basis-1/4 relative">
               <div className="absolute bottom-10 left-10">
-                <h1 className="text-4xl font-extrabold text-[#2b2c59]" >Our Socials</h1>
+                <h1 className="text-4xl font-extrabold text-gray-800" >Our Socials</h1>
                 <div className="flex gap-4 pt-5">
-                  <a href="https://www.instagram.com">
+                  <a href="https://www.instagram.com/unswkpop/">
                       <img src={ig} alt="Instagram" className="w-12 h-12" />
                   </a>
-                  <a href="https://www.facebook.com">
+                  <a href="https://www.facebook.com/unswkpop/">
                       <img src={fb} alt="Facebook" className="w-12 h-12" />
                   </a>
-                  <a href="https://www.tiktok.com">
+                  <a href="https://www.tiktok.com/@unswkpop">
                       <img src={tiktok} alt="TikTok" className="w-12 h-12" />
                   </a>
                 </div>

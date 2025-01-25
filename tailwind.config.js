@@ -14,6 +14,7 @@ module.exports = {
         'home': "url(./assets/home.svg)",
         'logobg': "url(./assets/logobg.svg)",
         'homebg': "url(./assets/homebg.svg)",
+        'aboutwv': "url(./assets/about.svg)"
       },
     },
   },

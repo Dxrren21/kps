@@ -8,6 +8,7 @@ export default function NavBar() {
         { path: "/", label: "Home"}, 
         { path: "/about", label: "About"}, 
         { path: "/media", label: "Media"}, 
+        { path: "/spons", label: "Sponsors"}, 
         { path: "/shop", label: "Shop"}, 
     ]
 
@@ -18,10 +19,10 @@ export default function NavBar() {
                 <button
                     key={path}
                     onClick={() => navigate(path)}
-                    className={`block rounded-md px-3 py-2 text-base font-medium ${
+                    className={`block px-3 py-2 text-base font-medium ${
                         location.pathname === path
-                            ? "text-white bg-[#1D1E2C]"
-                            :  "text-[#EF9CDA] hover:bg-[#FECEF1] hover:text-[#1D1E2C]"
+                            ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
+                            :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
                     }`}
                 >
                     {label}
