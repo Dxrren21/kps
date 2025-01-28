@@ -19,7 +19,7 @@ export default function NavBar() {
                 <button
                     key={path}
                     onClick={() => navigate(path)}
-                    className={`block px-3 py-2 text-base font-medium ${
+                    className={`block px-3 py-2 text-xl ${
                         location.pathname === path
                             ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
                             :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
