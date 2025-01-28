@@ -1,5 +1,5 @@
 import AboutSpeech from "../components/AboutSpeech";
-import Profile from "../components/Profile";
+import Carousel from "../components/Carousel";
 
 export default function About() {
     return(
@@ -9,17 +9,13 @@ export default function About() {
                 <AboutSpeech />
             </section>
             <section className="bg-[#ffe3f8] h-screen w-screen">
-                <h1 className="pt-12 text-5xl font-bold text-center">Meet the Team</h1>
-                <h2 className="font-semibold text-center italics pt-10 text-xl">Executives</h2>
-                <div className="flex justify-center pt-10">
-                    <div className="flex gap-2 mx-auto">
-                        <Profile />
-                        <Profile />
-                        <Profile />
-                        <Profile />
-                        <Profile />
-
-                    </div>
+                <h1 className="pt-12 text-5xl font-bold text-center pb-10">Meet the Team</h1>
+                <Carousel />
+            </section>
+            <section>
+                <h1>Contact Us </h1>
+                <div>
+                 
                 </div>
             </section>
 
