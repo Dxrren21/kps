@@ -16,6 +16,9 @@ module.exports = {
         'homebg': "url(./assets/homebg.svg)",
         'aboutwv': "url(./assets/about.svg)"
       },
+      boxShadow: {
+        'white-glow': '0 0 15px rgba(255, 255, 255, 0.7)',
+      },
     },
   },
   plugins: [],

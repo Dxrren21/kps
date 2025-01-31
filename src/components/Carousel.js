@@ -1,18 +1,54 @@
 import Profile from "../components/Profile";
 import { useState, useEffect } from "react"
-import arrow from "../assets/arrow.svg"
+import rightArrow from "../assets/arrow.svg"
 import leftArrow from "../assets/left.svg"
 
 export default function Carousel() {
 
+    // const profiles = [
+    //     ["a", "b", "c", "d"], 
+    //     ["e", "f", "g"], 
+    //     ["h", "i"], 
+    //     ["j", "k"], 
+    //     ["l", "m", "n"], 
+    //     ["a", "bb", "q"], 
+    //     ["ee", "i"]
+
+    // ]
     const profiles = [
-        ["a", "b", "c", "d"], 
-        ["e", "f", "g"], 
-        ["h", "i"], 
-        ["j", "k"], 
-        ["l", "m", "n"], 
-        ["a", "bb", "q"], 
-        ["ee", "i"]
+        [
+            {profName: "Georgia", link: "georgia.PNG", role: "President", ig:"georgia_mc_"}, 
+            {profName: "Estela", link: "estela.PNG", role: "Vice President", ig:"estela.i121"}, 
+            {profName: "Emma", link: "emma.PNG", role: "Secretary", ig:"_emmapetrs"}, 
+            {profName: "Jacinta", link: "jacinta.PNG", role: "Treasurer", ig:"jacinta.p_"}, 
+            {profName: "Celina", link: "celina.PNG", role: "Arc Delegate", ig:"clnchh"}
+        ], 
+        [
+            {profName: "Darren", link: "abc"}, 
+            {profName: "Grace", link: "cde"}, 
+            {profName: "Emmy", link: "efg"}, 
+        ], 
+        [
+            {profName: "Bronteney", link: "abc"}, 
+            {profName: "Alexandra", link: "cde"}, 
+        ], 
+        [
+            {profName: "Imasha", link: "abc"}, 
+            {profName: "Riddish", link: "cde"}, 
+        ], 
+        [
+            {profName: "Albert", link: "abc"}, 
+            {profName: "Karen", link: "cde"}, 
+            {profName: "Charlotte", link: "efg"}, 
+        ], 
+        [
+            {profName: "Becca", link: "abc"}, 
+            {profName: "Karen", link: "cde"}, 
+        ], 
+        [
+            {profName: "Ivory", link: "abc"}, 
+            {profName: "Chea", link: "cde"}, 
+        ]
 
     ]
 
@@ -23,28 +59,43 @@ export default function Carousel() {
     const [display, setDisplay] = useState(profiles[0])
     const [displayTitle, setDisplayTitle] = useState(kpsPort[0])
 
-    const handleLeftClick = (e) => {
-        if (slide === 0) {
-            setSlide(profiles.length - 1)
-        } else {
-            setSlide(slide - 1)
-        }
-        console.log("lefts clik", slide)
-    }
-    const handleRightClick = (e) => {
-        if (slide === (profiles.length - 1)) {
-            setSlide(0)
-        } else {
-            setSlide(slide + 1)
-        }
-        console.log("right clik")
-
-    }
+    const handleLeftClick = () => {
+        setSlide((prevSlide) => (prevSlide === 0 ? profiles.length - 1 : prevSlide - 1));
+    };
+    
+    const handleRightClick = () => {
+        setSlide((prevSlide) => (prevSlide === profiles.length - 1 ? 0 : prevSlide + 1));
+    };
+    
 
     useEffect(() => {
+        const handleKeyDown = (e) => {
+            console.log(e.key)
+            if (e.key === "ArrowLeft") {
+                handleLeftClick()
+            }
+            if (e.key  === "ArrowRight") {
+                handleRightClick()
+            }
+        }
+
+        window.addEventListener("keydown", handleKeyDown)
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+          };
+        
+    }, [])
+
+    
+
+    useEffect(() => {
+        console.log("chanign gdispl")
         setDisplayTitle(kpsPort[slide])
         setDisplay(profiles[slide])
     }, [slide])
+
+    
     // set a timer to activate button every 5 seconds 
     // on click of a button, the profiles change 
     // shifting transformation ? 
@@ -53,25 +104,26 @@ export default function Carousel() {
 
     return(
         <>
-            <div className="flex flex-col bg-red-200 w-[80%] h-[60%] m-auto items-center">
-                <h2 className="font-semibold text-center italics pt-10 pb-20 text-xl">{displayTitle}</h2>
-                    <div className="flex justify-between w-full">
-                        <img src={leftArrow} className="relative right-1" onClick={() => handleLeftClick()}></img>
+            <div className="flex flex-col w-[80%] h-[50%] m-auto items-center mb-12 rounded-3xl ">
+
+                <h2 className="font-light uppercase text-center italics pt-5 pb-5 text-3xl ">{displayTitle}</h2>
+                    <div className="flex justify-between w-full items-center">
+                        <img src={leftArrow} className="relative right-1 pl-12 w-[100px] h-[100px]" onClick={() => handleLeftClick()} ></img>
                         <div className="flex gap-2 mx-auto w-[100%] p-10 justify-center">
                             
-                            {display.map((name, link) => (
-                                <Profile name={name} link={link}/>
+                            {display.map((prof, index) => (
+                                <Profile key={index} name={prof.profName} link={prof.link} role={prof.role} ig={prof.ig}/>
                             ))}
                             
                         </div>
-                        <img src={arrow} className="relative right-1" onClick={() => handleRightClick()}></img>
+                        <img src={rightArrow} className="relative right-1 pr-12 w-[100px] h-[100px]" onClick={() => handleRightClick()}></img>
                         
                     </div>
                     
                   
                    
             </div>
-            <img src="https://ibb.co/vzjwH0z"></img>
+
         </>
     )
 }

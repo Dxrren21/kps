@@ -4,7 +4,7 @@ export default function AboutSpeech() {
     
     return (
         <>
-            <div className="mt-12 bg-white w-[55vw] h-[55vh] border border-4 rounded-4 p-4 border-[#273b92] bg-gray rounded-xl rounded-br-none text-lg">
+            <div className="mt-12 bg-white w-[55vw] h-[55vh] border border-4 rounded-4 p-4 border-[#273b92] bg-gray rounded-xl rounded-br-none text-lg mb-10">
                     
                     <h2 className="pt-5 font-semibold text-center text-xl" >
                         Welcome to UNSW Kpop Society! 
