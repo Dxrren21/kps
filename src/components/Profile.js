@@ -18,7 +18,7 @@ export default function Profile({name, link, role, ig}) {
                     )}
                 </div>
             </a>
-            <h3 className="text-lg font-semibold text-center pt-3">{name}</h3>
+            <h3 className="text-xl font-serif text-center pt-3">{name}</h3>
             
         </div>
     )

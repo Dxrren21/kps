@@ -106,7 +106,7 @@ export default function Carousel() {
         <>
             <div className="flex flex-col w-[80%] h-[50%] m-auto items-center mb-12 rounded-3xl ">
 
-                <h2 className="font-light uppercase text-center italics pt-5 pb-5 text-3xl ">{displayTitle}</h2>
+                <h2 className="font-light italic uppercase text-center italic pt-5 pb-5 text-3xl ">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center">
                         <img src={leftArrow} className="relative right-1 pl-12 w-[100px] h-[100px]" onClick={() => handleLeftClick()} ></img>
                         <div className="flex gap-2 mx-auto w-[100%] p-10 justify-center">

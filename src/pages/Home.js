@@ -6,12 +6,23 @@ import { useRef } from 'react'
 import ig from "../assets/ig.svg"
 import fb from "../assets/fb.svg"
 import tiktok from "../assets/tiktok.svg"
+import yt from "../assets/youtube.svg"
+import disc from "../assets/discord.svg"
+import { useEffect } from "react"
+import { useLocation } from "react-router"
 
 export default function Home() {
     const noticeRef = useRef()
+    const location = useLocation();
+    useEffect(() => {
+      if (location.state?.scrollToNotices) {
+        noticeRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [location]);
+  
     return(
     <>
-      <section className="w-[100vw] h-[200vh] overflow-x-hidden">
+      <section className="w-[100vw] h-[200vh] overflow-x-hidden ">
         <section className="w-full h-screen pt-[5%] flex flex-col overflow-x-hidden space-y-12 bg-logobg bg-cover bg-center box-border">
           <Klogo />
           <ButtonsMenu />
@@ -39,6 +50,13 @@ export default function Home() {
                   </a>
                   <a href="https://www.tiktok.com/@unswkpop">
                       <img src={tiktok} alt="TikTok" className="w-12 h-12" />
+                  </a>
+
+                  <a href="https://www.youtube.com/c/unswkpopsociety">
+                      <img src={yt} alt="Youtube" className="w-12 h-12" />
+                  </a>
+                  <a href="https://discord.com/invite/kGz5kxpzCF">
+                      <img src={disc} alt="Discord" className="w-12 h-12" />
                   </a>
                 </div>
               </div>
