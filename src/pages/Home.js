@@ -22,50 +22,47 @@ export default function Home() {
   
     return(
     <>
-      <section className="w-[100vw] h-[200vh] overflow-x-hidden ">
+      <section className="w-full min-h-screen overflow-x-hidden ">
         <section className="w-full h-screen pt-[5%] flex flex-col overflow-x-hidden space-y-12 bg-logobg bg-cover bg-center box-border">
           <Klogo />
           <ButtonsMenu />
           <ScrollArrow scrollToRef={noticeRef} />
         </section>
-          <section 
+        <section 
             ref={noticeRef} 
-            className="flex h-[100vh] font-sans bg-home bg-cover bg-center"
-          >
-            <div className="basis-1/4 relative bottom-[10%]">
-              <div className="absolute rotate-90 pb-[100%] origin-left text-6xl font-extrabold text-gray-800">NOTICEBOARD</div>
-            </div>
-            <div className="basis-1/2">
-              <NoticeBoard />
-            </div>
-            <div className="basis-1/4 relative">
-              <div className="absolute bottom-10 left-10">
-                <h1 className="text-4xl font-extrabold text-gray-800" >Our Socials</h1>
-                <div className="flex gap-4 pt-5">
-                  <a href="https://www.instagram.com/unswkpop/">
-                      <img src={ig} alt="Instagram" className="w-12 h-12" />
-                  </a>
-                  <a href="https://www.facebook.com/unswkpop/">
-                      <img src={fb} alt="Facebook" className="w-12 h-12" />
-                  </a>
-                  <a href="https://www.tiktok.com/@unswkpop">
-                      <img src={tiktok} alt="TikTok" className="w-12 h-12" />
-                  </a>
+            className="md:flex md:h-[100vh] font-sans bg-home bg-cover bg-center"
+        >
+          <div className="md:basis-1/4 max-md:w-[100%] max-md:text-center relative md:bottom-[10%] ">
+            <div className="md:absolute md:rotate-90 md:pb-[100%] md:origin-left md:text-6xl font-extrabold text-gray-800 text-3xl">NOTICEBOARD</div>
+          </div>
+          <div className="md:basis-1/2 max-md:w-[100%] max-md:px-10">
+            <NoticeBoard />
+          </div>
+          <div className="md:basis-1/4 relative max-md:hidden ">
+            <div className="absolute bottom-10 left-10">
+              <h1 className="text-4xl font-extrabold text-gray-800" >Our Socials</h1>
+              <div className="flex gap-4 pt-5">
+                <a href="https://www.instagram.com/unswkpop/">
+                    <img src={ig} alt="Instagram" className="w-12 h-12" />
+                </a>
+                <a href="https://www.facebook.com/unswkpop/">
+                    <img src={fb} alt="Facebook" className="w-12 h-12" />
+                </a>
+                <a href="https://www.tiktok.com/@unswkpop">
+                    <img src={tiktok} alt="TikTok" className="w-12 h-12" />
+                </a>
 
-                  <a href="https://www.youtube.com/c/unswkpopsociety">
-                      <img src={yt} alt="Youtube" className="w-12 h-12" />
-                  </a>
-                  <a href="https://discord.com/invite/kGz5kxpzCF">
-                      <img src={disc} alt="Discord" className="w-12 h-12" />
-                  </a>
-                </div>
+                <a href="https://www.youtube.com/c/unswkpopsociety">
+                    <img src={yt} alt="Youtube" className="w-12 h-12" />
+                </a>
+                <a href="https://discord.com/invite/kGz5kxpzCF">
+                    <img src={disc} alt="Discord" className="w-12 h-12" />
+                </a>
               </div>
+            </div>
               
             </div>
-            
-            
-            {/* <NoticeBoard />
-            <Mascot /> */}
+ 
         </section>
       </section>
     </>
