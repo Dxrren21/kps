@@ -32,7 +32,7 @@ export default function About() {
                 <AboutSpeech />
                 <ScrollArrow className="block pt-10" scrollToRef={meetRef}/>
             </section>
-            <section ref={meetRef} className="h-screen w-full bg-gradient-to-b from-[#ffe3f8] via-[#ffe3f8] to-white">
+            <section ref={meetRef} className="h-screen w-full bg-gradient-to-b from-[#ffe3f8] via-[#ffe3f8] to-white mb-10">
                 <div className="flex pt-12 pb-10 justify-center gap-3 items-center">  
                     <img src={star} className="w-10 h-10 pt-1 "></img>
                     <h1 className="text-5xl font-serif text-center">Meet the Team</h1>

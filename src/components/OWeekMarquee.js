@@ -7,14 +7,14 @@ import nhb from "../assets/nhb.jpg"
 import iheart from "../assets/iheart.jpg"
 
 
-export default function SponsorMarquee() {
+export default function OWeekMarquee() {
 
     return(
         <>
             <div className="w-full h-full overflow-hidden">
-                <Marquee speed={30} className="w-full h-full bg-gray-400 mt-[3%] flex items-center pt-10 pb-10">
+                <Marquee   direction="right" speed={30} className="w-full h-full bg-gray-800 mt-[3%] flex items-center pt-10 pb-10  mb-10 ">
                     <div className="flex gap-4 h-full ">
-                        <div className="flex flex-col  items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white ml-5   ">
+                        <div className="flex flex-col  items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white ml-5 ">
                             <img src={sbLogo} className=" h-[150px] object-contain  "></img>
                                 <span  className="text-xl  pt-10  text-gray-500 tracking-widest">TBC</span>
                         </div>
