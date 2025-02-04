@@ -24,7 +24,7 @@ export default function Carousel() {
             {profName: "Celina", link: "celina.PNG", role: "Arc Delegate", ig:"clnchh"}
         ], 
         [
-            {profName: "Darren", link: "abc"}, 
+            {profName: "Darren", link: "logo192.png"}, 
             {profName: "Grace", link: "grace.JPG"}, 
             {profName: "Emmy", link: "efg"}, 
         ], 
