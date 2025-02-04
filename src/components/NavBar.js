@@ -12,13 +12,13 @@ export default function NavBar() {
     ]
 
     return (
-        <div className="flex h-[70px] bg-gray-100">  
+        <div className="flex h-[70px] bg-gray-100 max-md:text-sm">  
         {
             navItems.map(({path, label}) => (
                 <button
                     key={path}
                     onClick={() => navigate(path)}
-                    className={`block px-3 py-2 text-xl ${
+                    className={`block px-3 py-2 text-xl font-semibold ${
                         location.pathname === path
                             ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
                             :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
@@ -29,13 +29,13 @@ export default function NavBar() {
             ))
         }
             <button 
-                className="block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                className="block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
                 onClick={() => navigate("/", { state: { scrollToNotices: true } })}
             >
                 Notices
             </button>
             <button 
-                className="block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                className="block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
                 onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                 Join Us
             </button>

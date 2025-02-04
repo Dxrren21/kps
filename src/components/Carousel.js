@@ -52,7 +52,14 @@ export default function Carousel() {
 
     ]
 
-    const kpsPort = ["Executives", "Dance", "Events", "Productions", "Human Resources", "Marketing", "Creative"]
+    const kpsPort = [
+        "Executives ✨", 
+        "Dance Directors 🎵", 
+        "Events Directors 🎉", 
+        "Productions Directors 🎥", 
+        "Human Resources Directors 💖", 
+        "Marketing Directors 📰", 
+        "Creative Directors 🎨"]
     
     
     const [slide, setSlide] = useState(0)
@@ -104,20 +111,31 @@ export default function Carousel() {
 
     return(
         <>
-            <div className="flex flex-col w-[80%] h-[50%] m-auto items-center mb-12 rounded-3xl ">
+            <div className="max-md:h-[70%] flex flex-col w-full h-[50%] m-auto items-center  rounded-3xl ">
 
-                <h2 className="font-light italic uppercase text-center italic pt-5 pb-5 text-3xl ">{displayTitle}</h2>
-                    <div className="flex justify-between w-full items-center">
-                        <img src={leftArrow} className="relative right-1 pl-12 w-[100px] h-[100px]" onClick={() => handleLeftClick()} ></img>
-                        <div className="flex gap-2 mx-auto w-[100%] p-10 justify-center">
+                <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
+                    <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
+                        <img src={leftArrow} className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
+                        <div className="flex mx-auto max-lg:grid max-lg:grid-cols-2">
                             
-                            {display.map((prof, index) => (
-                                <Profile key={index} name={prof.profName} link={prof.link} role={prof.role} ig={prof.ig}/>
-                            ))}
+                                {display.map((prof, index) => (
+                                    <div
+                                    key={index}
+                                    className={display.length % 2 !== 0 && index === display.length - 1 ? "col-span-2 flex justify-center" : ""}
+                                    >
+                                        <Profile 
+                                            key={index} 
+                                            name={prof.profName} 
+                                            link={prof.link} 
+                                            role={prof.role} 
+                                            ig={prof.ig}
+                                            />
+                                    </div>
+                                ))}
+                            
                             
                         </div>
-                        <img src={rightArrow} className="relative right-1 pr-12 w-[100px] h-[100px]" onClick={() => handleRightClick()}></img>
-                        
+                        <img src={rightArrow} className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleRightClick()}></img>
                     </div>
                     
                   

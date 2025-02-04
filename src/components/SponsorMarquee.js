@@ -12,7 +12,7 @@ export default function SponsorMarquee() {
     return(
         <>
             <div className="w-full h-full overflow-hidden">
-                <Marquee speed={30} className="w-full h-full bg-gray-400 mt-[3%] flex items-center pt-10 pb-10">
+                <Marquee speed={30} className="w-full h-full bg-gray-700 mt-[3%] flex items-center pt-10 pb-10">
                     <div className="flex gap-4 h-full ">
                         <div className="flex flex-col  items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white ml-5   ">
                             <img src={sbLogo} className=" h-[150px] object-contain  "></img>
