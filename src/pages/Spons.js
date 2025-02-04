@@ -17,7 +17,7 @@ export default function Spons() {
                     <button type="button" className=" w-[30%] h-[40%] text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Join the Internal Team</button> */}
                     <div className="group relative w-[300px] h-[80px]">
                         <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                            <button type="button" className="w-full h-full text-white bg-pink-300 hover:border hover:border-2 hover:border-purple-500 font-semibold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                            <button type="button" className="w-full h-full bg-white text-blue-400 hover:border hover:border-2 hover:border-purple-500 font-semibold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                             Sponsor Us
                             </button>
                         </a>

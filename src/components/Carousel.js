@@ -25,25 +25,25 @@ export default function Carousel() {
         ], 
         [
             {profName: "Darren", link: "abc"}, 
-            {profName: "Grace", link: "cde"}, 
+            {profName: "Grace", link: "grace.JPG"}, 
             {profName: "Emmy", link: "efg"}, 
         ], 
         [
-            {profName: "Bronteney", link: "abc"}, 
-            {profName: "Alexandra", link: "cde"}, 
+            {profName: "Bronteney", link: "bronteney.jpg"}, 
+            {profName: "Alexandra", link: "alex.jpg"}, 
         ], 
         [
             {profName: "Imasha", link: "abc"}, 
-            {profName: "Riddish", link: "cde"}, 
+            {profName: "Riddhish", link: "riddhish.jpg"}, 
         ], 
         [
             {profName: "Albert", link: "abc"}, 
-            {profName: "Karen", link: "cde"}, 
+            {profName: "Karen", link: "karenH.jpg"}, 
             {profName: "Charlotte", link: "efg"}, 
         ], 
         [
-            {profName: "Becca", link: "abc"}, 
-            {profName: "Karen", link: "cde"}, 
+            {profName: "Becca", link: "becca.jpg"}, 
+            {profName: "Karen", link: "karenN"}, 
         ], 
         [
             {profName: "Ivory", link: "abc"}, 
