@@ -16,7 +16,7 @@ export default function AboutSpeech() {
 
                         This is a space to make new friends and experiences, so don’t be afraid to join our society or contact us for more info!    
                     </p>
-                    <p className=" text-left pt-[7%] italic max-md:text-[1rem] lg:text-2xl text-center text-pink-300">
+                    <p className=" text-left pt-[7%] italic max-md:text-[1rem] lg:text-2xl text-center text-pink-300" >
                         Love, <br /> Georgia (2025 President) ❤️
                     </p>
              

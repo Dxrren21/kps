@@ -1,16 +1,13 @@
 import AboutSpeech from "../components/AboutSpeech";
 import Carousel from "../components/Carousel";
-import discord from "../assets/discord.svg"
-import youtube from "../assets/youtube.svg"
-import ig from "../assets/ig.svg"
-import fb from "../assets/fb.svg"
-import tiktok from "../assets/tiktok.svg"
+
 import ScrollArrow from "../components/ScrollArrow";
 import { useRef, useEffect } from 'react'
 import star from "../assets/star.svg"
 import boy from "../assets/boy.png"
 import { useLocation } from "react-router";
 import girl from "../assets/girl.png"
+import Footer from "../components/Footer";
 
 export default function About() {
     const meetRef = useRef()
@@ -24,7 +21,7 @@ export default function About() {
         }, [location]);
     return(
         <>
-            <section className="flex flex-col items-center justify-start bg-aboutwv  max-w-screen bg-cover bg-no-repeat bg-center ">
+            <section className="md:min-h-screen flex flex-col items-center justify-start bg-aboutwv  max-w-screen bg-cover bg-no-repeat bg-center ">
                 <div className="flex pt-12 pb-10 justify-center gap-3 items-center">  
                     <img src={star} className="w-10 h-10 pt-1 "></img>
                     <h1 className="text-5xl text-center font-extrabold uppercase text-gray-800">About Us</h1>
@@ -76,52 +73,7 @@ export default function About() {
                 </div>
             </section>
  
-            <section className=" flex max-md:flex-col items-start justify-center pb-10 bg-gray-100 mx-auto w-full max-md:text-center">
-             
-            <div className="flex flex-col items-center p-8">
-                <h2 className="text-3xl font-bold text-center">For the Latest Updates</h2>
-                
-                <div className="flex flex-col w-full pt-12 items-center justify-center">
-                    {/* Top Grid (3 columns) */}
-                    <div className="grid grid-cols-3 gap-5 items-center justify-center w-full">
-                    <a href="https://www.instagram.com/unswkpop/">
-                        <img src={ig} alt="Instagram" className="w-[70%] mx-auto" />
-                    </a>
-                    <a href="https://www.facebook.com/unswkpop/">
-                        <img src={fb} alt="Facebook" className="w-[70%] mx-auto" />
-                    </a>
-                    <a href="https://www.tiktok.com/@unswkpop">
-                        <img src={tiktok} alt="TikTok" className="w-[70%] mx-auto" />
-                    </a>
-                    </div>
-
-                    {/* Bottom Grid (2 columns) */}
-                    <div className="grid grid-cols-2 pt-6 gap-10 ">
-                    <a href="https://discord.com/invite/kGz5kxpzCF">
-                        <img src={discord} className="w-[80px] mx-auto" />
-                    </a>
-                    <a href="https://www.youtube.com/c/unswkpopsociety">
-                        <img src={youtube} className="w-[75px] mx-auto" />
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-                    
-                    <div className="flex flex-col md:items-start p-8 gap-5 items-center ">
-                
-                        <h2 className="text-3xl font-bold max-md:text-center">For Any Inquiries</h2> 
-                        <h3 className="text-xl pt-7 font-semibold">General Inquiries and Feedback</h3>
-                        <p className="md:pl-5">Email us on: unswkpop@gmail.com</p>
-                        <h3 className="text-xl font-semibold">Sponsorships and collaborations</h3>
-                        <p className="md:pl-5">Email us on: mark.unswkpop@gmail.com </p>  
-                        <p className="italic">*All inquiries can also be sent as DMs on Instagram/Facebook!</p>      
-                     
-                             
-                    </div>
-                    
-       
-            </section>
+          <Footer />
 
             
         </>

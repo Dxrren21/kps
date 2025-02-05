@@ -2,6 +2,8 @@ import SponsorMarquee from "../components/SponsorMarquee"
 import star from "../assets/pstar.svg"
 import OWeekMarquee from "../components/OWeekMarquee"
 import boy from "../assets/boy.png"
+import Footer from "../components/Footer"
+import SponModal from "../components/SponModal"
 export default function Spons() {
     return(
         <>
@@ -23,12 +25,7 @@ export default function Spons() {
                         </a>
                         <img src={boy} alt="Image 2" className="relative top-[-140%] left-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                     </div>
-                    <div className="group relative  w-[300px] h-[80px]">
-                        <button type="button" className="w-full h-full bg-white text-purple-500 hover:border hover:border-2 hover:border-purple-500 font-semibold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                            Sponsor us
-                        </button>
-                        <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-                    </div>
+                    <SponModal />
                 </div>
                 <div className="flex items-center gap-2 pt-10">
                     <img src={star} className="w-10 h-10 pt-1 "></img>
@@ -43,7 +40,7 @@ export default function Spons() {
                 </div>
                 <OWeekMarquee />
             </section>
-          
+            <Footer />
         </>
     )
 }

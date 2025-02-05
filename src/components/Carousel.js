@@ -24,7 +24,7 @@ export default function Carousel() {
             {profName: "Celina", link: "celina.PNG", role: "Arc Delegate", ig:"clnchh"}
         ], 
         [
-            {profName: "Darren", link: "logo192.png"}, 
+            {profName: "Darren", link: "darren.jpg"}, 
             {profName: "Grace", link: "grace.JPG"}, 
             {profName: "Emmy", link: "efg"}, 
         ], 
@@ -38,16 +38,16 @@ export default function Carousel() {
         ], 
         [
             {profName: "Albert", link: "abc"}, 
-            {profName: "Karen", link: "karenH.jpg"}, 
+            {profName: "Karen", link: "karenH.JPG"}, 
             {profName: "Charlotte", link: "efg"}, 
         ], 
         [
             {profName: "Becca", link: "becca.jpg"}, 
-            {profName: "Karen", link: "karenN"}, 
+            {profName: "Karen", link: "karenN.jpg"}, 
         ], 
         [
             {profName: "Ivory", link: "abc"}, 
-            {profName: "Chea", link: "cde"}, 
+            {profName: "Chea", link: "chea.jpg"}, 
         ]
 
     ]

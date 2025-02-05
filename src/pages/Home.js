@@ -11,6 +11,7 @@ import disc from "../assets/discord.svg"
 import { useEffect } from "react"
 import { useLocation } from "react-router"
 
+
 export default function Home() {
     const noticeRef = useRef()
     const location = useLocation();
@@ -65,6 +66,7 @@ export default function Home() {
  
         </section>
       </section>
+
     </>
     )
 }
