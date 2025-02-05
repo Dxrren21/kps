@@ -24,7 +24,7 @@ export default function About() {
         }, [location]);
     return(
         <>
-            <section className="flex flex-col items-center justify-start bg-aboutwv h-screen max-w-screen bg-cover bg-no-repeat bg-center ">
+            <section className="flex flex-col items-center justify-start bg-aboutwv  max-w-screen bg-cover bg-no-repeat bg-center ">
                 <div className="flex pt-12 pb-10 justify-center gap-3 items-center">  
                     <img src={star} className="w-10 h-10 pt-1 "></img>
                     <h1 className="text-5xl text-center font-extrabold uppercase text-gray-800">About Us</h1>
@@ -46,7 +46,7 @@ export default function About() {
             <section className="my-[5%]">
                 <div ref={joinRef} className="w-[25%] flex pb-10 justify-center gap-3 items-center mx-auto">  
                     <img src={star} className="w-10 h-10 pt-1 "></img>
-                    <h1 className="text-5xl font-extrabold uppercase text-gray-800 text-center">Join Us</h1>
+                    <h1 className="text-5xl font-extrabold uppercase text-gray-800 text-center max-md:pt-10">Join Us</h1>
                     <img src={star} className="w-10 h-10 pt-1"></img>
                 </div>
                 
@@ -76,7 +76,7 @@ export default function About() {
                 </div>
             </section>
  
-            <section className=" flex max-md:flex-col items-start justify-center pb-10 bg-gray-100 mx-auto w-screen max-md:text-center">
+            <section className=" flex max-md:flex-col items-start justify-center pb-10 bg-gray-100 mx-auto w-full max-md:text-center">
              
             <div className="flex flex-col items-center p-8">
                 <h2 className="text-3xl font-bold text-center">For the Latest Updates</h2>

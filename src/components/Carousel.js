@@ -116,7 +116,7 @@ export default function Carousel() {
                 <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
                         <img src={leftArrow} className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
-                        <div className="flex mx-auto max-lg:grid max-lg:grid-cols-2">
+                        <div className="flex mx-auto max-[1500px]:grid max-[1500px]:grid-cols-2 ">
                             
                                 {display.map((prof, index) => (
                                     <div
