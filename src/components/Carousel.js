@@ -1,7 +1,7 @@
 import Profile from "../components/Profile";
 import { useState, useEffect } from "react"
 import rightArrow from "../assets/arrow.svg"
-import leftArrow from "../assets/left.svg"
+
 
 export default function Carousel() {
 
@@ -115,7 +115,7 @@ export default function Carousel() {
 
                 <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
-                        <img src={leftArrow} className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
+                        <img src={rightArrow} alt="left arrow" className="relative w-[60px] h-[60px] scale-x-[-1] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
                         <div className="flex mx-auto max-[1500px]:grid max-[1500px]:grid-cols-2 ">
                             
                                 {display.map((prof, index) => (
@@ -135,7 +135,7 @@ export default function Carousel() {
                             
                             
                         </div>
-                        <img src={rightArrow} className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleRightClick()}></img>
+                        <img src={rightArrow} alt="right arrow" className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleRightClick()}></img>
                     </div>
                     
                   

@@ -23,10 +23,10 @@ export default function Home() {
     return(
     <>
       <section className="w-full min-h-screen overflow-x-hidden ">
-        <section className="w-full h-screen pt-[5%] flex flex-col overflow-x-hidden space-y-12 bg-logobg bg-cover bg-center box-border">
+        <section className="w-full h-screen pt-[5%] flex flex-col items-center overflow-x-hidden space-y-12 bg-logobg bg-cover bg-center box-border">
           <Klogo />
           <ButtonsMenu />
-          <ScrollArrow scrollToRef={noticeRef} />
+          <ScrollArrow scrollToRef={noticeRef} className="md:pt-10"/>
         </section>
         <section 
             ref={noticeRef} 
