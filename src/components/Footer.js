@@ -26,9 +26,9 @@ export default function Footer() {
                     </div>
 
                     {/* Bottom Grid (2 columns) */}
-                    <div className="grid grid-cols-2 pt-6 gap-10 ">
+                    <div className="grid grid-cols-2 pt-6 gap-10  ">
                     <a href="https://discord.com/invite/kGz5kxpzCF">
-                        <img src={discord} cclassName="w-[80px] mx-auto" />
+                        <img src={discord} className="w-[80px]  mx-auto" />
                     </a>
                     <a href="https://www.youtube.com/c/unswkpopsociety">
                         <img src={youtube} alt="youtube logo"  className="w-[75px] mx-auto" />

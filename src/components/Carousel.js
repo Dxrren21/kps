@@ -1,20 +1,13 @@
 import Profile from "../components/Profile";
 import { useState, useEffect } from "react"
 import rightArrow from "../assets/arrow.svg"
+import { useSwipeable } from "react-swipeable";
 
 
 export default function Carousel() {
 
-    // const profiles = [
-    //     ["a", "b", "c", "d"], 
-    //     ["e", "f", "g"], 
-    //     ["h", "i"], 
-    //     ["j", "k"], 
-    //     ["l", "m", "n"], 
-    //     ["a", "bb", "q"], 
-    //     ["ee", "i"]
+    
 
-    // ]
     const profiles = [
         [
             {profName: "Georgia", link: "georgia.PNG", role: "President", ig:"georgia_mc_"}, 
@@ -26,20 +19,20 @@ export default function Carousel() {
         [
             {profName: "Darren", link: "darren.jpg"}, 
             {profName: "Grace", link: "grace.JPG"}, 
-            {profName: "Emmy", link: "efg"}, 
+            {profName: "Emmy", link: "emmy.jpg"}, 
         ], 
         [
             {profName: "Bronteney", link: "bronteney.jpg"}, 
             {profName: "Alexandra", link: "alex.jpg"}, 
         ], 
         [
-            {profName: "Imasha", link: "abc"}, 
+            {profName: "Imasha", link: "imasha.jpg"}, 
             {profName: "Riddhish", link: "riddhish.jpg"}, 
         ], 
         [
             {profName: "Albert", link: "abc"}, 
             {profName: "Karen", link: "karenH.JPG"}, 
-            {profName: "Charlotte", link: "efg"}, 
+            {profName: "Charlotte", link: "char.jpg"}, 
         ], 
         [
             {profName: "Becca", link: "becca.jpg"}, 
@@ -61,6 +54,12 @@ export default function Carousel() {
         "Marketing Directors 📰", 
         "Creative Directors 🎨"]
     
+    const handlers = useSwipeable({
+        onSwipedLeft: handleRightClick,
+        onSwipedRight: handleLeftClick,
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+        });
     
     const [slide, setSlide] = useState(0)
     const [display, setDisplay] = useState(profiles[0])
@@ -111,7 +110,7 @@ export default function Carousel() {
 
     return(
         <>
-            <div className="max-md:h-[70%] flex flex-col w-full h-[50%] m-auto items-center  rounded-3xl ">
+            <div {...handlers} className="max-md:h-[70%] flex flex-col w-full h-[50%] m-auto items-center  rounded-3xl ">
 
                 <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
