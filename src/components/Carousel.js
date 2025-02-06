@@ -19,7 +19,7 @@ export default function Carousel() {
         [
             {profName: "Darren", link: "darren.jpg"}, 
             {profName: "Grace", link: "grace.JPG"}, 
-            {profName: "Emmy", link: "emmy.jpg"}, 
+            {profName: "Emmy", link: "emmy.PNG"}, 
         ], 
         [
             {profName: "Bronteney", link: "bronteney.jpg"}, 
@@ -54,12 +54,7 @@ export default function Carousel() {
         "Marketing Directors 📰", 
         "Creative Directors 🎨"]
     
-    const handlers = useSwipeable({
-        onSwipedLeft: handleRightClick,
-        onSwipedRight: handleLeftClick,
-        preventDefaultTouchmoveEvent: true,
-        trackMouse: true
-        });
+    
     
     const [slide, setSlide] = useState(0)
     const [display, setDisplay] = useState(profiles[0])
@@ -73,6 +68,13 @@ export default function Carousel() {
         setSlide((prevSlide) => (prevSlide === profiles.length - 1 ? 0 : prevSlide + 1));
     };
     
+
+    const handlers = useSwipeable({
+        onSwipedLeft: handleRightClick,
+        onSwipedRight: handleLeftClick,
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+        });
 
     useEffect(() => {
         const handleKeyDown = (e) => {
