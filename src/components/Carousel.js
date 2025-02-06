@@ -17,30 +17,30 @@ export default function Carousel() {
             {profName: "Celina", link: "celina.PNG", role: "Arc Delegate", ig:"clnchh"}
         ], 
         [
-            {profName: "Darren", link: "darren.jpg"}, 
-            {profName: "Grace", link: "grace.JPG"}, 
-            {profName: "Emmy", link: "emmy.PNG"}, 
+            {profName: "Darren", link: "darren.jpg", ig: "drndja"}, 
+            {profName: "Grace", link: "grace.JPG", ig: "graaacexia"}, 
+            {profName: "Emmy", link: "emmy.PNG", ig: "luemyi"}, 
         ], 
         [
-            {profName: "Bronteney", link: "bronteney.jpg"}, 
-            {profName: "Alexandra", link: "alex.jpg"}, 
+            {profName: "Bronteney", link: "bronteney.jpg", ig: "bronte_kw4"}, 
+            {profName: "Alexandra", link: "alex.jpg", ig: "z__ndra"}, 
         ], 
         [
-            {profName: "Imasha", link: "imasha.jpg"}, 
-            {profName: "Riddhish", link: "riddhish.jpg"}, 
+            {profName: "Imasha", link: "imasha.jpg", ig: "imashakay"}, 
+            {profName: "Riddhish", link: "riddhish.jpg", ig: "riddhish_c"}, 
         ], 
         [
-            {profName: "Albert", link: "abc"}, 
-            {profName: "Karen", link: "karenH.JPG"}, 
-            {profName: "Charlotte", link: "char.jpg"}, 
+            {profName: "Albert", link: "abc", ig: "alberttan204"}, 
+            {profName: "Karen", link: "karenH.JPG", ig: "k_karen06"}, 
+            {profName: "Charlotte", link: "char.jpg", ig: "charlottiewen_"}, 
         ], 
         [
-            {profName: "Becca", link: "becca.jpg"}, 
-            {profName: "Karen", link: "karenN.jpg"}, 
+            {profName: "Becca", link: "becca.jpg", ig: "_becca1201"}, 
+            {profName: "Karen", link: "karenN.jpg", ig: "kkarennguyenn"}, 
         ], 
         [
-            {profName: "Ivory", link: "abc"}, 
-            {profName: "Chea", link: "chea.jpg"}, 
+            {profName: "Ivory", link: "abc", ig: "ivorywithluv"}, 
+            {profName: "Chea", link: "chea.jpg", ig: "chea_bh"}, 
         ]
 
     ]
@@ -73,6 +73,8 @@ export default function Carousel() {
         onSwipedLeft: handleRightClick,
         onSwipedRight: handleLeftClick,
         preventDefaultTouchmoveEvent: true,
+        preventScrollOnSwipe: true,
+        trackTouch: true,
         trackMouse: true
         });
 
@@ -98,7 +100,7 @@ export default function Carousel() {
     
 
     useEffect(() => {
-        console.log("chanign gdispl")
+        
         setDisplayTitle(kpsPort[slide])
         setDisplay(profiles[slide])
     }, [slide])
