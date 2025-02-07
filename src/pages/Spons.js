@@ -33,13 +33,13 @@ export default function Spons() {
                         <h1 className="text-5xl text-center font-extrabold uppercase max-md:text-3xl">O-Week Specials</h1>
                     <img src={star} className="w-10 h-10 pt-1 max-md:w-7 max-md:h-7 "></img>
                 </div>
-                <SponsorMarquee />
+                <OWeekMarquee />
                 <div className="flex items-center gap-2 pt-10 max-md:gap-2 mx-2">
                     <img src={star} className="w-10 h-10 pt-1 max-md:w-7 max-md:h-7 "></img>
                         <h1 className="text-5xl text-center font-extrabold uppercase max-md:text-3xl">Year Round Deals</h1>
                     <img src={star} className="w-10 h-10 pt-1 max-md:w-7 max-md:h-7 "></img>
                 </div>
-                <OWeekMarquee />
+                <SponsorMarquee />
             </section>
             <Footer />
         </>

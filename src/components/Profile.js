@@ -13,7 +13,7 @@ export default function Profile({name, link, role, ig}) {
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-all duration-300 flex justify-center items-center flex-col">
                     <p className="text-white font-semibold">{role}</p>
                     {ig && (
-                    <span className="text-white mt-2 max-md:text-sm">
+                    <span className="text-white mt-2 max-md:text-sm text-center">
                         @{ig}
                     </span>
                     )}
