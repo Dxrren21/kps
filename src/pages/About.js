@@ -18,6 +18,10 @@ export default function About() {
           if (location.state?.scrollToJoin) {
             joinRef.current?.scrollIntoView({ behavior: "smooth" });
           }
+
+          if (location.state?.scrolltoMeet) {
+            meetRef.current?.scrollIntoView({ behavior: "smooth" });
+          }
         }, [location]);
     return(
         <>
