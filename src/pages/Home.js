@@ -10,6 +10,7 @@ import yt from "../assets/youtube.svg"
 import disc from "../assets/discord.svg"
 import { useEffect } from "react"
 import { useLocation } from "react-router"
+import spotify from "../assets/spotify.svg"
 
 
 export default function Home() {
@@ -42,22 +43,25 @@ export default function Home() {
           <div className="md:basis-1/4 relative max-md:hidden ">
             <div className="absolute bottom-10 left-10">
               <h1 className="text-4xl font-extrabold text-gray-800" >Our Socials</h1>
-              <div className="flex gap-4 pt-5">
-                <a href="https://www.instagram.com/unswkpop/">
+              <div className="grid gap-4 pt-5 grid-cols-3 pl-5">
+                <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
                     <img src={ig} alt="Instagram" className="w-12 h-12" />
                 </a>
-                <a href="https://www.facebook.com/unswkpop/">
+                <a href="https://www.facebook.com/unswkpop/" target="_blank" rel="noopener noreferrer">
                     <img src={fb} alt="Facebook" className="w-12 h-12" />
                 </a>
-                <a href="https://www.tiktok.com/@unswkpop">
+                <a href="https://www.tiktok.com/@unswkpop" target="_blank" rel="noopener noreferrer">
                     <img src={tiktok} alt="TikTok" className="w-12 h-12" />
                 </a>
 
-                <a href="https://www.youtube.com/c/unswkpopsociety">
+                <a href="https://www.youtube.com/c/unswkpopsociety" target="_blank" rel="noopener noreferrer">
                     <img src={yt} alt="Youtube" className="w-12 h-12" />
                 </a>
-                <a href="https://discord.com/invite/kGz5kxpzCF">
+                <a href="https://discord.com/invite/kGz5kxpzCF" target="_blank" rel="noopener noreferrer">
                     <img src={disc} alt="Discord" className="w-12 h-12" />
+                </a>
+                <a href="https://open.spotify.com/user/316ivsboitfa3jbjvonn2cl2icwm?si=a1dbfce0714e4d0f" target="_blank" rel="noopener noreferrer">
+                    <img src={spotify} alt="Spotify" className="w-11 h-11" />
                 </a>
               </div>
             </div>

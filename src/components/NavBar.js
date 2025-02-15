@@ -8,7 +8,7 @@ export default function NavBar() {
         { path: "/", label: "Home"}, 
         { path: "/about", label: "About"}, 
         { path: "/spons", label: "Sponsors"}, 
-        // { path: "/shop", label: "Shop"}, 
+        { path: "/newsletter", label: "Newsletter"}, 
     ]
 
     return (

@@ -3,6 +3,7 @@ import youtube from "../assets/youtube.svg"
 import ig from "../assets/ig.svg"
 import fb from "../assets/fb.svg"
 import tiktok from "../assets/tiktok.svg"
+import spotify from "../assets/spotify.svg"
 
 export default function Footer() {
     return (
@@ -14,24 +15,27 @@ export default function Footer() {
                 <div className="flex flex-col w-full pt-12 items-center justify-center">
                     {/* Top Grid (3 columns) */}
                     <div className="grid grid-cols-3 gap-5 items-center justify-center w-full">
-                    <a href="https://www.instagram.com/unswkpop/">
+                    <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
                         <img src={ig} alt="Instagram" className="w-[70%] mx-auto" />
                     </a>
-                    <a href="https://www.facebook.com/unswkpop/">
+                    <a href="https://www.facebook.com/unswkpop/" target="_blank" rel="noopener noreferrer">
                         <img src={fb} alt="Facebook" className="w-[70%] mx-auto" />
                     </a>
-                    <a href="https://www.tiktok.com/@unswkpop">
+                    <a href="https://www.tiktok.com/@unswkpop" target="_blank" rel="noopener noreferrer">
                         <img src={tiktok} alt="TikTok" className="w-[70%] mx-auto" />
                     </a>
                     </div>
 
                     {/* Bottom Grid (2 columns) */}
-                    <div className="grid grid-cols-2 pt-6 gap-10  ">
-                    <a href="https://discord.com/invite/kGz5kxpzCF">
+                    <div className="grid grid-cols-3 pt-6 gap-10  ">
+                    <a href="https://discord.com/invite/kGz5kxpzCF" target="_blank" rel="noopener noreferrer">
                         <img src={discord} className="w-[80px]  mx-auto" />
                     </a>
-                    <a href="https://www.youtube.com/c/unswkpopsociety">
+                    <a href="https://www.youtube.com/c/unswkpopsociety" target="_blank" rel="noopener noreferrer">
                         <img src={youtube} alt="youtube logo"  className="w-[75px] mx-auto" />
+                    </a>
+                    <a href="https://open.spotify.com/user/316ivsboitfa3jbjvonn2cl2icwm?si=a1dbfce0714e4d0f" target="_blank" rel="noopener noreferrer">
+                        <img src={spotify} alt="spotfiy logo"  className="w-[70px] mx-auto" />
                     </a>
                     </div>
                 </div>

@@ -8,6 +8,8 @@ import Events from './pages/Media'
 import Shop from './pages/Shop'
 import NavBar from './components/NavBar'
 import Spons from './pages/Spons'
+import Newsletter from './pages/Newsletter'
+
 
 export default function Router() {
     const location = useLocation()
@@ -24,6 +26,7 @@ export default function Router() {
                 <Route path='/media' element={<Events />}/>
                 <Route path='/shop' element={<Shop />}/>
                 <Route path='/spons' element={<Spons />}/>
+                <Route path='/newsletter' element={<Newsletter />}/>
             </Routes>
         </>
     )
