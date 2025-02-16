@@ -1,6 +1,6 @@
 import AboutSpeech from "../components/AboutSpeech";
 import Carousel from "../components/Carousel";
-
+import JoinModal from "../components/JoinModal";
 import ScrollArrow from "../components/ScrollArrow";
 import { useRef, useEffect } from 'react'
 import star from "../assets/star.svg"
@@ -54,7 +54,7 @@ export default function About() {
                 <div className="flex justify-center p-8 gap-5 max-md:flex-col max-md:items-center">
                     {/* <button type="button" className=" w-[30%] h-[40%] text-white bg-pink-300 hover:border hover:border-2 hover:border-pink-400 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Join as a Member</button>
                     <button type="button" className=" w-[30%] h-[40%] text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Join the Internal Team</button> */}
-                    <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
+                    {/* <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
                         <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
                             <button type="button" className="w-full h-full text-white bg-pink-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                             <span className="text-xl">
@@ -64,7 +64,8 @@ export default function About() {
                             </button>
                         </a>
                         <img src={boy} alt="Image 2" className="relative top-[-140%] left-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-                    </div>
+                    </div> */}
+                    <JoinModal />
                     <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
                         <button type="button" className="w-full h-full text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                             <span className="text-xl">

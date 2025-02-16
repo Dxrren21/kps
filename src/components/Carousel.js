@@ -30,7 +30,7 @@ export default function Carousel() {
             {profName: "Riddhish", link: "riddhish.jpg", ig: "riddhish_c"}, 
         ], 
         [
-            {profName: "Albert", link: "abc", ig: "alberttan204"}, 
+            {profName: "Albert", link: "albert.jpg", ig: "alberttan204"}, 
             {profName: "Karen", link: "karenH.JPG", ig: "k_karen06"}, 
             {profName: "Charlotte", link: "char.jpg", ig: "charlottiewen_"}, 
         ], 
@@ -39,7 +39,7 @@ export default function Carousel() {
             {profName: "Karen", link: "karenN.jpg", ig: "kkarennguyenn"}, 
         ], 
         [
-            {profName: "Ivory", link: "abc", ig: "ivorywithluv"}, 
+            {profName: "Ivory", link: "ivory.PNG", ig: "ivorywithluv"}, 
             {profName: "Chea", link: "chea.jpg", ig: "chea_bh"}, 
         ]
 

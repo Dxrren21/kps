@@ -7,7 +7,7 @@ export default function AboutSpeech() {
     return (
         <>
             <div className="group mt-12 bg-white max-md:w-[80vw] w-[55vw] pb-12 border border-4 rounded-4 p-4 border-[#273b92] bg-gray rounded-xl text-lg mb-10 ">
-                    <img src={girl} alt="internal team" className="absolute top-[180px] left-1/2 transform -translate-x-1/2 w-[130px] h-[130px] object-contain lg:hidden max-[350px]:top-[220px]" />
+                    <img src={girl} alt="internal team" className="absolute top-[110px] left-1/2 transform -translate-x-1/2 w-[130px] h-[130px] object-contain lg:hidden max-[350px]:top-[200px] z-45" />
                     <h2 className="font-semibold pt-5  text-center text-2xl max-md:text-[1.1rem]" >
                         Welcome to UNSW Kpop Society! 
                     </h2>
