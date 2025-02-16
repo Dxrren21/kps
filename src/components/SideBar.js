@@ -1,5 +1,5 @@
 import sidebar from "../assets/sidebar.png"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function SideBar() {
 
@@ -20,7 +20,7 @@ export default function SideBar() {
                     
                 </div>
             ) : (
-                <img src={sidebar} onClick={handleClick()}></img>
+                <img alt="sidebar" src={sidebar} onClick={handleClick()}></img>
             )
         }
        

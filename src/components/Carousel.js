@@ -1,5 +1,5 @@
 import Profile from "../components/Profile";
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo, useCallback } from "react"
 import rightArrow from "../assets/arrow.svg"
 import { useSwipeable } from "react-swipeable";
 
@@ -8,7 +8,7 @@ export default function Carousel() {
 
     
 
-    const profiles = [
+    const profiles = useMemo(() => [
         [
             {profName: "Georgia", link: "georgia.PNG", role: "President", ig:"georgia_mc_"}, 
             {profName: "Estela", link: "estela.PNG", role: "Vice President", ig:"estela.i121"}, 
@@ -43,16 +43,17 @@ export default function Carousel() {
             {profName: "Chea", link: "chea.jpg", ig: "chea_bh"}, 
         ]
 
-    ]
+    ], []); 
 
-    const kpsPort = [
-        "Executives ✨", 
-        "Dance Directors 🎵", 
-        "Events Directors 🎉", 
-        "Productions Directors 🎥", 
-        "Human Resources Directors 💖", 
-        "Marketing Directors 📰", 
-        "Creative Directors 🎨"]
+    const kpsPort = useMemo(() => [
+        "Executives ✨",
+        "Dance Directors 🎵",
+        "Events Directors 🎉",
+        "Productions Directors 🎥",
+        "Human Resources Directors 💖",
+        "Marketing Directors 📰",
+        "Creative Directors 🎨"
+    ], []);
     
     
     
@@ -60,13 +61,14 @@ export default function Carousel() {
     const [display, setDisplay] = useState(profiles[0])
     const [displayTitle, setDisplayTitle] = useState(kpsPort[0])
 
-    const handleLeftClick = () => {
+    const handleLeftClick = useCallback(() => {
         setSlide((prevSlide) => (prevSlide === 0 ? profiles.length - 1 : prevSlide - 1));
-    };
-    
-    const handleRightClick = () => {
+    }, [profiles.length]);
+
+    // Memoize the handleRightClick function
+    const handleRightClick = useCallback(() => {
         setSlide((prevSlide) => (prevSlide === profiles.length - 1 ? 0 : prevSlide + 1));
-    };
+    }, [profiles.length]);
     
 
     const handlers = useSwipeable({
@@ -95,7 +97,7 @@ export default function Carousel() {
             window.removeEventListener("keydown", handleKeyDown);
           };
         
-    }, [])
+    }, [handleLeftClick, handleRightClick])
 
     
 
@@ -103,19 +105,12 @@ export default function Carousel() {
         
         setDisplayTitle(kpsPort[slide])
         setDisplay(profiles[slide])
-    }, [slide])
+    }, [slide, kpsPort, profiles])
 
-    
-    // set a timer to activate button every 5 seconds 
-    // on click of a button, the profiles change 
-    // shifting transformation ? 
-    // on click / on load the profiles of a given list are loaded // perhaps we need an array of arrays,
-    // map each link to the user 
 
     return(
         <>
             <div {...handlers} className="max-md:h-[70%] flex flex-col w-full h-[50%] m-auto items-center  rounded-3xl ">
-
                 <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
                         <img src={rightArrow} alt="left arrow" className="relative w-[60px] h-[60px] scale-x-[-1] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
@@ -140,9 +135,6 @@ export default function Carousel() {
                         </div>
                         <img src={rightArrow} alt="right arrow" className="relative w-[60px] h-[60px] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleRightClick()}></img>
                     </div>
-                    
-                  
-                   
             </div>
 
         </>

@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom"
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useCallback } from "react"
 import sidebar from "../assets/sidebar.png"
 
 export default function NavBar() {
@@ -16,9 +16,9 @@ export default function NavBar() {
 
     const [barVisible, setBarVisible] = useState(false)
 
-    const toggleVisible = () => {
-        setBarVisible(!barVisible)
-    }
+    const toggleVisible = useCallback(() => {
+        setBarVisible((prevVisible) => !prevVisible);
+    }, []);
 
     const sidebarRef = useRef(null);
 
@@ -36,14 +36,14 @@ export default function NavBar() {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [barVisible]);
+    }, [barVisible, toggleVisible]);
 
     // if the dimensions change, bar visible must be set to false ?
 
     return (
         <>  
             <div className="group fixed z-[60]" onClick={toggleVisible}>
-                <img className="md:hidden fixed w-8 h-8 ml-4 mt-3 opacity-[70%]" src={sidebar}></img>
+                <img className="md:hidden fixed w-8 h-8 ml-4 mt-3 opacity-[70%]" alt="sidebar logo" src={sidebar}></img>
             </div>
             {
                 barVisible && (

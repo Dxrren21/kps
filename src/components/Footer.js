@@ -29,7 +29,7 @@ export default function Footer() {
                     {/* Bottom Grid (2 columns) */}
                     <div className="grid grid-cols-3 pt-6 gap-10  ">
                     <a href="https://discord.com/invite/kGz5kxpzCF" target="_blank" rel="noopener noreferrer">
-                        <img src={discord} className="w-[80px]  mx-auto" />
+                        <img src={discord} alt="discord logo" className="w-[80px]  mx-auto" />
                     </a>
                     <a href="https://www.youtube.com/c/unswkpopsociety" target="_blank" rel="noopener noreferrer">
                         <img src={youtube} alt="youtube logo"  className="w-[75px] mx-auto" />

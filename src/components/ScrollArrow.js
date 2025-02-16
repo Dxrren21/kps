@@ -1,5 +1,3 @@
-import { useRef } from 'react'
-
 export default function ScrollArrow({ scrollToRef }) {
     const handleScroll = () => {
       if (scrollToRef?.current) {

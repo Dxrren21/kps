@@ -22,7 +22,7 @@ export default function AboutSpeech() {
              
                     
   
-                    <img src={georgia} className="absolute w-[30%] right-[5%] md:w-[25%] top-[750px] md:right-[10%] max-lg:hidden min-[1500px]:top-[600px] "></img>
+                    <img alt="georgia avatar" src={georgia} className="absolute w-[30%] right-[5%] md:w-[25%] top-[750px] md:right-[10%] max-lg:hidden min-[1500px]:top-[600px] "></img>
                     
             </div>
 
