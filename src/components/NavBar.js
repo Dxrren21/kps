@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useRef, useState, useEffect } from "react"
 import sidebar from "../assets/sidebar.png"
 
 export default function NavBar() {
@@ -20,6 +20,24 @@ export default function NavBar() {
         setBarVisible(!barVisible)
     }
 
+    const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                toggleVisible(); // Close sidebar when clicking outside
+            }
+        }
+
+        if (barVisible) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [barVisible]);
+
     // if the dimensions change, bar visible must be set to false ?
 
     return (
@@ -29,7 +47,7 @@ export default function NavBar() {
             </div>
             {
                 barVisible && (
-                    <section className="fixed w-3/5 min-h-screen bg-white z-50 opacity-90 flex flex-col items-center h-full pt-[20%]">
+                    <section ref={sidebarRef} className="fixed w-3/5 min-h-screen bg-white z-50 opacity-90 flex flex-col items-center h-full pt-[20%]">
                       {
                         navItems.map(({path, label}) => (
                             <button 
