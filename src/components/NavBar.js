@@ -56,7 +56,7 @@ export default function NavBar() {
                                 className={`block text-l ${
                                     location.pathname === path 
                                         ? "text-blue-400 underline underline-offset-8 decoration-pink-400 py-5"
-                                        : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-black-400 py-5"
+                                        : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 py-5"
                                 }`}
                             >
                                 {label}
