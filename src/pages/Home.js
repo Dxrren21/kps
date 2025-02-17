@@ -28,7 +28,9 @@ export default function Home() {
         <section className="w-full h-screen pt-[5%] flex flex-col items-center overflow-x-hidden space-y-12 bg-logobg bg-cover bg-center box-border">
           <Klogo />
           <ButtonsMenu />
-          <ScrollArrow scrollToRef={noticeRef} className="md:pt-10"/>
+          <div className="w-full flex justify-center max-md:mr-3 mr-10">
+            <ScrollArrow scrollToRef={noticeRef} />
+          </div>
         </section>
         <section 
             ref={noticeRef} 
