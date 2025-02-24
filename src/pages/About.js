@@ -7,6 +7,7 @@ import star from "../assets/star.svg"
 import { useLocation } from "react-router";
 import girl from "../assets/girl.png"
 import Footer from "../components/Footer";
+import JoinIntModal from "../components/JoinIntModal";
 
 export default function About() {
     const meetRef = useRef()
@@ -24,7 +25,7 @@ export default function About() {
         }, [location]);
     return(
         <>
-            <section className="md:min-h-screen flex flex-col items-center justify-start bg-aboutwv  max-w-screen bg-cover bg-no-repeat bg-center ">
+            <section className="md:min-h-screen flex flex-col items-center justify-start bg-aboutwv max-w-screen bg-cover bg-no-repeat bg-center ">
                 <div className="flex pt-12 pb-10 justify-center gap-3 items-center">  
                     <img alt="star" src={star} className="w-10 h-10 pt-1 "></img>
                     <h1 className="text-5xl text-center font-extrabold uppercase text-gray-800">About Us</h1>
@@ -55,7 +56,7 @@ export default function About() {
                     <button type="button" className=" w-[30%] h-[40%] text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Join the Internal Team</button> */}
                     
                     <JoinModal />
-                    <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
+                    {/* <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
                         <button type="button" className="w-full h-full text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                             <span className="text-xl">
                                 Join the Internal Team
@@ -63,7 +64,8 @@ export default function About() {
                             
                         </button>
                         <img src={girl} alt="internal team" className="absolute top-[-50%] right-0 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-                    </div>
+                    </div> */}
+                    <JoinIntModal />
                 </div>
             </section>
  

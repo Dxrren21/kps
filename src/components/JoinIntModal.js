@@ -1,7 +1,7 @@
 import { useState } from "react"
 import boy from "../assets/boy.png"
-
-export default function JoinModal() {
+import girl from "../assets/girl.png"
+export default function JoinIntModal() {
 
     const [visibility, setVisibility] = useState(false)
 
@@ -17,41 +17,38 @@ export default function JoinModal() {
                        
                 <button 
                     type="button" 
-                    className="w-full h-full text-white bg-pink-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                    className="w-full h-full text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                     onClick={toggleModal}>
                     <span className="text-xl">
-                        Join as a Member
+                        Join our Subcommittees
                     </span>
 
                 </button>
                 
-                <img src={boy} alt="join" className="relative top-[-140%] left-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                <img src={girl} alt="join" className="absolute top-[-50%] right-0 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             </div>
-            
-            
 
             {visibility && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 max-md:w-full"  onClick={toggleModal}>
-                    <div className="bg-white p-12 rounded-lg shadow-lg max-w-md flex items-center justify-center flex-col">
-                        <h2 className="text-lg font-semibold text-center pb-10">Please fill out these two forms to become an official member!</h2>
+                    <div className="bg-white p-12 rounded-lg shadow-lg max-w-md flex flex-col items-center ">
+                        <h2 className="text-lg font-semibold text-center pb-10">Please have a read of all our ports and apply to the relevant ones you are interested in!</h2>
                         <div className="flex gap-5 max-md:flex-col max-md:align-center">
-                            <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
-                                <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" className="w-full h-full text-pink-300 border-gray-300 border border-2 hover:border-purple-500  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                            <div className="group relative max-md:w-[250px] w-[200px] h-[80px]">
+                                <a href="https://drive.google.com/file/d/1pjY6KMLMgwKjkh7aiDzvZLoHAnAn5M2H/view" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" className="w-full h-full text-pink-300 border-gray-300 border border-2 hover:border-purple-500 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                                     <span className="text-lg">
-                                        Society Form
+                                        Port Information
                                     </span>
-                
                                     </button>
                                 </a>
                                 <img src={boy} alt="boy" className="relative top-[-140%] left-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                             </div>
                      
-                            <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
-                                <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
+                            <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] ">
+                                <a href="youtube.com" target="_blank" rel="noopener noreferrer">
                                     <button type="button" className="w-full h-full text-blue-300 border-gray-300 border border-2 hover:border-purple-500  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                                     <span className="text-lg">
-                                        Arc Form
+                                        Sign Up Form
                                     </span>
                 
                                     </button>
