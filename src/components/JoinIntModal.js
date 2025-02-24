@@ -45,7 +45,7 @@ export default function JoinIntModal() {
                             </div>
                      
                             <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] ">
-                                <a href="youtube.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://forms.gle/8Nx7UAM3dhm7nur8A" target="_blank" rel="noopener noreferrer">
                                     <button type="button" className="w-full h-full text-blue-300 border-gray-300 border border-2 hover:border-purple-500  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                                     <span className="text-lg">
                                         Sign Up Form
