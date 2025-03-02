@@ -39,25 +39,25 @@ export default function NoticeBoard() {
             </div>
             
             <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdiFDEmFSxClQZgshn2eAOJGm4yXCqLMcyBxQ0e2tLH9LCAeg/viewform"
+                href="https://forms.gle/7B4Mq3zme978SUK2A"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Kick Off Sign Up Form   
+                        Jisoo Earthquake Workshop Sign Up Form 
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
             <a 
-                href="https://forms.gle/PkXqQJ5njgCTGDpc8"
+                href="https://forms.gle/r2Kb7R2DHxGrNDj36"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Foundations Week 1 Sign Up Form   
+                        Foundations Week 2 Sign Up Form   
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
