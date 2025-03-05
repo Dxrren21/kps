@@ -7,7 +7,7 @@ export default function NoticeBoard() {
 
     return (
         <section className="grid gap-10 pt-20 grid-cols-1 max-md:flex max-md:flex-col max-md:items-center max-md:pb-12">  
-            <div className="flex gap-7">
+            {/* <div className="flex gap-7">
                 <a 
                     href="https://forms.gle/8Nx7UAM3dhm7nur8A"
                     target="_blank" 
@@ -36,7 +36,7 @@ export default function NoticeBoard() {
                     <img src={girl} alt="internal team" className="absolute top-[-33%] right-0 md:w-[120px] md:h-[110px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             
                 </a>
-            </div>
+            </div> */}
             
             <a 
                 href="https://forms.gle/7B4Mq3zme978SUK2A"
@@ -51,25 +51,25 @@ export default function NoticeBoard() {
 
             </a>
             <a 
-                href="https://forms.gle/r2Kb7R2DHxGrNDj36"
+                href="https://forms.gle/68U22iq4ZNx5bbeLA"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Foundations Week 2 Sign Up Form   
+                        Foundations Week 3 Sign Up Form   
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
-            {/* <div className="group relative w-full max-md:w-[80%]">
+            <div className="group relative w-full max-md:w-[80%]">
                 <div 
                     className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2"
                     onClick={() => navigate("/about", { state: { scrollToMeet: true } })}>
                     Meet the 2025 UNSW Kpop Society Team
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-            </div> */}
+            </div>
             
             
             
