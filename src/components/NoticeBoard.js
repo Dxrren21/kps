@@ -39,37 +39,49 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://forms.gle/7B4Mq3zme978SUK2A"
+                href="https://forms.gle/j7HxseM8NZ9a11dCA"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Jisoo Earthquake Workshop Sign Up Form 
+                        Blue Sign Up Form 
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
             <a 
-                href="https://forms.gle/68U22iq4ZNx5bbeLA"
+                href="https://forms.gle/GpL1gw5rFBmKvxiu5"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Foundations Week 3 Sign Up Form   
+                        Foundations Week 4 Sign Up Form   
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
-            <div className="group relative w-full max-md:w-[80%]">
+            <a 
+                href="https://forms.gle/evkjNsro8wboyRhT9"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative w-full max-md:w-[80%]">
+ 
+                <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
+                        KNTQ Sign Up Form   
+                </div>
+                <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+
+            </a>
+            {/* <div className="group relative w-full max-md:w-[80%]">
                 <div 
                     className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2"
                     onClick={() => navigate("/about", { state: { scrollToMeet: true } })}>
                     Meet the 2025 UNSW Kpop Society Team
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-            </div>
+            </div> */}
             
             
             
