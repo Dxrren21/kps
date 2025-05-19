@@ -78,36 +78,40 @@ export default function NavBar() {
                     </section>
                 )
             }
-            <div className="flex h-[70px] bg-white max-md:hidden">  
-            {
-                navItems.map(({path, label}) => (
-                    <button
-                        key={path}
-                        onClick={() => navigate(path)}
-                        className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
-                            location.pathname === path
-                                ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
-                                :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
-                        }`}
+            <div className="fixed top-0 left-0 w-full z-40 bg-white max-md:hidden shadow-md">
+                <div className="flex h-[70px]">
+                {
+                    navItems.map(({path, label}) => (
+                        <button
+                            key={path}
+                            onClick={() => navigate(path)}
+                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
+                                location.pathname === path
+                                    ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
+                                    :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                            }`}
+                        >
+                            {label}
+                        </button>
+                    ))
+                    
+                }
+                    <button 
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                     >
-                        {label}
+                        Notices
                     </button>
-                ))
+                    <button 
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
+                        Join Us
+                    </button>
                 
-            }
-                <button 
-                    className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
-                    onClick={() => navigate("/", { state: { scrollToNotices: true } })}
-                >
-                    Notices
-                </button>
-                <button 
-                    className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
-                    onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
-                    Join Us
-                </button>
-            
+                </div>
             </div>
+            {/* "pushes" the pages down */}
+            <div className="h-[70px] max-md:hidden" />
         </>
         
     )
