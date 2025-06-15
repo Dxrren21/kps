@@ -17,5 +17,5 @@ code {
 }
 
 button {
-  @apply shadow hover:shadow-md transition-shadow;
+  @apply shadow transition-shadow focus:shadow-none;
 }

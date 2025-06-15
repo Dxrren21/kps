@@ -53,7 +53,7 @@ export default function NavBar() {
                             <button 
                                 key={path}
                                 onClick={() => navigate(path)}
-                                className={`block text-l ${
+                                className={`block text-l shadow-none ${
                                     location.pathname === path 
                                         ? "text-blue-400 underline underline-offset-8 decoration-pink-400 py-5"
                                         : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 py-5"
@@ -65,13 +65,13 @@ export default function NavBar() {
 
                       }
                         <button 
-                            className="block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                            className="block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
                             onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                         >
                             Notices
                         </button>
                         <button 
-                            className=" block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                            className=" block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
                             onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                             Join Us
                         </button>
