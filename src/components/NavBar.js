@@ -85,7 +85,7 @@ export default function NavBar() {
                         <button
                             key={path}
                             onClick={() => navigate(path)}
-                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
+                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm shadow-none ${
                                 location.pathname === path
                                     ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
                                     :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
@@ -97,13 +97,13 @@ export default function NavBar() {
                     
                 }
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
                         onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                     >
                         Notices
                     </button>
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
                         onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                         Join Us
                     </button>
