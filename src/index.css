@@ -17,5 +17,5 @@ code {
 }
 
 button {
-  @apply shadow transition-shadow focus:shadow-none;
+  @apply shadow-md transition-shadow focus:shadow-none;
 }
