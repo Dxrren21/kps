@@ -7,7 +7,7 @@ export default function ScrollArrow({ scrollToRef }) {
   
     return (
 
-      <button className="bg-transparent border-none cursor-pointer flex justify-center" onClick={handleScroll}>
+      <button className="bg-transparent border-none cursor-pointer flex justify-center shadow-none" onClick={handleScroll}>
           <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-6 h-6 text-purple-500 animate-bounce"
