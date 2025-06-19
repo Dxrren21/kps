@@ -29,6 +29,14 @@ export default function Newsletter() {
                             </a>
                             <img src={girl} alt="Image 2" className="relative top-[-135px] left-[70%] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                     </div>
+                    <div className="group relative w-[300px] h-[80px]">
+                            <a href="https://drive.google.com/drive/folders/1TuGK6EO7TXirLFM9ZyB8s6X8CoQHH2Cd?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <button type="button" className="w-full h-full bg-white text-blue-400 border border-2 border-gray-300 font-semibold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                2025 Newsletter Archive
+                                </button>
+                            </a>
+                            <img src={boy} alt="Image 2" className="relative top-[-150%] left-[5%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                    </div>
                 </div>
             </section>
             <Footer />
