@@ -1,6 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom"
 import { useRef, useState, useEffect, useCallback } from "react"
 import sidebar from "../assets/sidebar.png"
+import logo from '../assets/kpoplogo.PNG'
 
 export default function NavBar() {
     const navigate = useNavigate()
@@ -42,12 +43,15 @@ export default function NavBar() {
 
     return (
         <>  
+            
             <div className="group fixed z-[60]" onClick={toggleVisible}>
                 <img className="md:hidden fixed w-8 h-8 ml-4 mt-3 opacity-[70%]" alt="sidebar logo" src={sidebar}></img>
             </div>
+            
             {
                 barVisible && (
                     <section ref={sidebarRef} className="fixed w-3/5 min-h-screen bg-white z-50 opacity-90 flex flex-col items-center h-full pt-[20%]">
+                        
                       {
                         navItems.map(({path, label}) => (
                             <button 
@@ -64,6 +68,7 @@ export default function NavBar() {
                         ))
 
                       }
+                        
                         <button 
                             className="block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
                             onClick={() => navigate("/", { state: { scrollToNotices: true } })}
@@ -75,17 +80,19 @@ export default function NavBar() {
                             onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                             Join Us
                         </button>
+                        
                     </section>
+                    
                 )
             }
-            <div className="fixed top-0 left-0 w-full z-40 bg-white max-md:hidden shadow-md">
-                <div className="flex h-[70px]">
+            <div className="flex h-[70px] bg-white max-md:hidden fixed w-full z-[100] align-center">  
+                <img src={logo} className="w-15 h-12 pl-5 pt-2 pr-1" onClick={() => navigate("/")}></img>
                 {
                     navItems.map(({path, label}) => (
                         <button
                             key={path}
                             onClick={() => navigate(path)}
-                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm shadow-none ${
+                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
                                 location.pathname === path
                                     ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
                                     :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
@@ -97,21 +104,18 @@ export default function NavBar() {
                     
                 }
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
                         onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                     >
                         Notices
                     </button>
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
                         onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                         Join Us
                     </button>
                 
                 </div>
-            </div>
-            {/* "pushes" the pages down */}
-            <div className="h-[70px] max-md:hidden" />
         </>
         
     )
