@@ -26,7 +26,7 @@ export default function About() {
     return(
         <>
             <section className="md:min-h-screen flex flex-col items-center justify-start bg-aboutwv max-w-screen bg-cover bg-no-repeat bg-center ">
-                <div className="flex pt-12 pb-10 justify-center gap-3 items-center">  
+                <div className="flex pt-12 pb-10 justify-center gap-3 items-center pt-[100px]">  
                     <img alt="star" src={star} className="w-10 h-10 pt-1 "></img>
                     <h1 className="text-5xl text-center font-extrabold uppercase text-gray-800">About Us</h1>
                     <img alt="star" src={star} className="w-10 h-10 pt-1 "></img>
@@ -65,7 +65,7 @@ export default function About() {
                         </button>
                         <img src={girl} alt="internal team" className="absolute top-[-50%] right-0 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                     </div> */}
-                    <JoinIntModal />
+                    {/* <JoinIntModal /> */} 
                 </div>
             </section>
  

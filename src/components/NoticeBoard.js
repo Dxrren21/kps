@@ -39,42 +39,42 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://events.humanitix.com/unsw-kpopsoc-x-fabsoc-x-hksa-x-ssa-x-mso-y2k-pubcrawl"
+                href="https://events.humanitix.com/casino-night-cruise"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Y2K Pubcrawl Tickets
+                        Cruise Tickets
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
-            <a 
+            {/* <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdqrnMXyG4ocCiyL-XkggerKjjmGsKDFFG8UEVIne2vqRlEbQ/viewform"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Hands Up Signup Form
+                        Popup Workshop 
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
-            </a>
+            </a> */}
             
-            {/* <a 
-                href="https://forms.gle/evkjNsro8wboyRhT9"
+            <a 
+                href="https://www.facebook.com/groups/678376034917827/?ref=share&mibextid=wwXIfr&rdid=4GA2hHxFIbVAqJ9J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1BpMLMmyHU%2F%3Fmibextid%3DwwXIfr#"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        KNTQ Sign Up Form   
+                        KCORE Leaders Group   
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
-            </a> */}
+            </a>
             {/* <div className="group relative w-full max-md:w-[80%]">
                 <div 
                     className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2"

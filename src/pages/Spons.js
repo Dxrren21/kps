@@ -8,7 +8,7 @@ export default function Spons() {
     return(
         <>
             <section className="w-full min-h-screen flex flex-col items-center bg-sponbg bg-cover bg-center">
-            <div className="flex items-center gap-2 pb-10 pt-10 max-md:gap-3 mx-2">
+            <div className="flex items-center gap-2 pb-10 pt-10 max-md:gap-3 mx-2 pt-[100px]">
                     <img src={star} className="w-10 h-10 pt-1 max-md:w-7 max-md:h-7 "></img>
                         <h1 className="text-5xl text-center font-extrabold uppercase max-md:text-3xl">K-Perks</h1>
                     <img src={star} className="w-10 h-10 pt-1 max-md:w-7 max-md:h-7 "></img>

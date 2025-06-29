@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom"
 import { useRef, useState, useEffect, useCallback } from "react"
 import sidebar from "../assets/sidebar.png"
-import logo from '../assets/kpoplogo.PNG'
+import logo from '../assets/kpopLogo.png'
 
 export default function NavBar() {
     const navigate = useNavigate()
@@ -57,10 +57,10 @@ export default function NavBar() {
                             <button 
                                 key={path}
                                 onClick={() => navigate(path)}
-                                className={`block text-l shadow-none ${
-                                    location.pathname === path 
-                                        ? "text-blue-400 underline underline-offset-8 decoration-pink-400 py-5"
-                                        : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 py-5"
+                                className={`block px-3 py-2 text-xl font-semibold max-md:text-sm shadow-none focus:shadow-none focus:outline-none ${
+                                    location.pathname === path
+                                        ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
+                                        : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
                                 }`}
                             >
                                 {label}
@@ -81,12 +81,13 @@ export default function NavBar() {
                             Join Us
                         </button>
                         
+                        
                     </section>
                     
                 )
             }
-            <div className="flex h-[70px] bg-white max-md:hidden fixed w-full z-[100] align-center">  
-                <img src={logo} className="w-15 h-12 pl-5 pt-2 pr-1" onClick={() => navigate("/")}></img>
+            <div className="flex h-[70px] bg-white max-md:hidden fixed w-full z-[100] align-center shadow">  
+                <img src={logo} className="w-[68px] h-[60px] pl-5 pt-4 pr-1" onClick={() => navigate("/")}></img>
                 {
                     navItems.map(({path, label}) => (
                         <button
@@ -94,8 +95,8 @@ export default function NavBar() {
                             onClick={() => navigate(path)}
                             className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
                                 location.pathname === path
-                                    ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
-                                    :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                                    ? "text-blue-400 underline underline-offset-8 decoration-pink-400 shadow-none"
+                                    :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
                             }`}
                         >
                             {label}
@@ -104,18 +105,20 @@ export default function NavBar() {
                     
                 }
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
                         onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                     >
                         Notices
                     </button>
                     <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold"
+                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none  "
                         onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                         Join Us
                     </button>
                 
                 </div>
+
+
         </>
         
     )

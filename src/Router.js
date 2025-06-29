@@ -18,6 +18,7 @@ export default function Router() {
             <section>
                 {location.pathname !== "/" && <NavBar />}
             </section>
+           
             <Routes classname="main">
                 <Route path="/" element={<Home />}/>
                 <Route path='/register' element={<Register />}/>
