@@ -46,26 +46,26 @@ export default function Home() {
             <div className="absolute bottom-10 left-10">
               <h1 className="text-4xl font-extrabold text-gray-800" >Our Socials</h1>
               <div className="grid gap-4 pt-5 grid-cols-3 pl-5">
-                <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
-                    <img src={ig} alt="Instagram" className="w-12 h-12" />
-                </a>
-                <a href="https://www.facebook.com/unswkpop/" target="_blank" rel="noopener noreferrer">
-                    <img src={fb} alt="Facebook" className="w-12 h-12" />
-                </a>
-                <a href="https://www.tiktok.com/@unswkpop" target="_blank" rel="noopener noreferrer">
-                    <img src={tiktok} alt="TikTok" className="w-12 h-12" />
-                </a>
+  <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
+    <img src={ig} alt="Instagram" className="w-12 h-12 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+  <a href="https://www.facebook.com/unswkpop/" target="_blank" rel="noopener noreferrer">
+    <img src={fb} alt="Facebook" className="w-12 h-12 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+  <a href="https://www.tiktok.com/@unswkpop" target="_blank" rel="noopener noreferrer">
+    <img src={tiktok} alt="TikTok" className="w-12 h-12 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+  <a href="https://www.youtube.com/c/unswkpopsociety" target="_blank" rel="noopener noreferrer">
+    <img src={yt} alt="Youtube" className="w-12 h-12 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+  <a href="https://discord.com/invite/kGz5kxpzCF" target="_blank" rel="noopener noreferrer">
+    <img src={disc} alt="Discord" className="w-12 h-12 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+  <a href="https://open.spotify.com/user/316ivsboitfa3jbjvonn2cl2icwm?si=a1dbfce0714e4d0f" target="_blank" rel="noopener noreferrer">
+    <img src={spotify} alt="Spotify" className="w-11 h-11 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
+  </a>
+</div>
 
-                <a href="https://www.youtube.com/c/unswkpopsociety" target="_blank" rel="noopener noreferrer">
-                    <img src={yt} alt="Youtube" className="w-12 h-12" />
-                </a>
-                <a href="https://discord.com/invite/kGz5kxpzCF" target="_blank" rel="noopener noreferrer">
-                    <img src={disc} alt="Discord" className="w-12 h-12" />
-                </a>
-                <a href="https://open.spotify.com/user/316ivsboitfa3jbjvonn2cl2icwm?si=a1dbfce0714e4d0f" target="_blank" rel="noopener noreferrer">
-                    <img src={spotify} alt="Spotify" className="w-11 h-11" />
-                </a>
-              </div>
             </div>
               
             </div>
