@@ -39,38 +39,38 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://events.humanitix.com/casino-night-cruise"
+                href="https://docs.google.com/forms/d/16FEff0qctF1FPzljsM-cHA4v7lcHic9VStBjw-2sQjM/viewform?edit_requested=true"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Cruise Tickets
+                        Annual General Meeting Sign Up Form
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
-            {/* <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdqrnMXyG4ocCiyL-XkggerKjjmGsKDFFG8UEVIne2vqRlEbQ/viewform"
+            <a 
+                href="https://docs.google.com/document/d/1xFsrjQCbHtM9DNMPqutEaFJPOHz5ZLVT8FK2mS8W3YM/edit?tab=t.0"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Popup Workshop 
+                        Executive Role Descriptions
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
-            </a> */}
+            </a> 
             
-            <a 
-                href="https://www.facebook.com/groups/678376034917827/?ref=share&mibextid=wwXIfr&rdid=4GA2hHxFIbVAqJ9J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1BpMLMmyHU%2F%3Fmibextid%3DwwXIfr#"
+            {/* <a 
+                href="https://forms.gle/evkjNsro8wboyRhT9"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        KCORE Leaders Group   
+                        Executive nomination form
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
