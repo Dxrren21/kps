@@ -61,7 +61,7 @@ export default function NoticeBoard() {
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
-            </a> */}
+            </a> 
             
             {/* <a 
                 href="https://forms.gle/evkjNsro8wboyRhT9"
