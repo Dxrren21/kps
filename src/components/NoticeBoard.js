@@ -39,25 +39,24 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://docs.google.com/forms/d/16FEff0qctF1FPzljsM-cHA4v7lcHic9VStBjw-2sQjM/viewform?edit_requested=true"
-                target="_blank" 
+                href="https://events.humanitix.com/fright-nights-the-dead-won-t-rest-tonight?fbclid=IwY2xjawNZkKBleHRuA2FlbQIxMABicmlkETFLaE1aT1BDTDM3M09nTlNRAR5oDFSn9jQFQ91P4yV-eYAmdmd0TAOXRCsSQ8WnvKa1Ml7oa84HpJUVPeYV-A_aem_p-UbC2AllSn_UF1A4pGvRg"
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Annual General Meeting Sign Up Form
+                        Fright Night Tickets 
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
             <a 
-                href="https://docs.google.com/document/d/1xFsrjQCbHtM9DNMPqutEaFJPOHz5ZLVT8FK2mS8W3YM/edit?tab=t.0"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScvLQ3EJFQcB1Y2wqtDniNBckp2My5CgBHlLwF7JiXARepmLw/viewform"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Executive Role Descriptions
+                        UNSW Kpop Signup Form 
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 

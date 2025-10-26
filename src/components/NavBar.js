@@ -11,7 +11,7 @@ export default function NavBar() {
         { path: "/", label: "Home"}, 
         { path: "/about", label: "About Us"}, 
         { path: "/spons", label: "Sponsors"}, 
-        { path: "/newsletter", label: "Newsletter"}, 
+        { path: "/newsletter", label: "Archives"}, 
     ]
 
 
