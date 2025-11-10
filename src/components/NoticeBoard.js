@@ -39,12 +39,12 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://events.humanitix.com/fright-nights-the-dead-won-t-rest-tonight?fbclid=IwY2xjawNZkKBleHRuA2FlbQIxMABicmlkETFLaE1aT1BDTDM3M09nTlNRAR5oDFSn9jQFQ91P4yV-eYAmdmd0TAOXRCsSQ8WnvKa1Ml7oa84HpJUVPeYV-A_aem_p-UbC2AllSn_UF1A4pGvRg"
+                href="https://tr.ee/UO1hf1yTRP"
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Fright Night Tickets 
+                        Destress Decoration
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
@@ -69,20 +69,20 @@ export default function NoticeBoard() {
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Executive nomination form
+                        I hate exams
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
-            </a>
-            {/* <div className="group relative w-full max-md:w-[80%]">
+            </a> */}
+            {/* /* <div className="group relative w-full max-md:w-[80%]">
                 <div 
                     className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2"
                     onClick={() => navigate("/about", { state: { scrollToMeet: true } })}>
                     Meet the 2025 UNSW Kpop Society Team
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-            </div> */}
-            
+            </div>
+             */}
             
             
         </section>
