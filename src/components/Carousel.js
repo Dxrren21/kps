@@ -10,37 +10,37 @@ export default function Carousel() {
 
     const profiles = useMemo(() => [
         [
-            {profName: "Georgia", link: "georgia.PNG", role: "President", ig:"georgia_mc_"}, 
-            {profName: "Estela", link: "estela.PNG", role: "Vice President", ig:"estela.i121"}, 
-            {profName: "Emma", link: "emma.PNG", role: "Secretary", ig:"_emmapetrs"}, 
-            {profName: "Jacinta", link: "jacinta.PNG", role: "Treasurer", ig:"jacinta.p_"}, 
-            {profName: "Celina", link: "celina.PNG", role: "Arc Delegate", ig:"clnchh"}
+            {profName: "Grace", link: "grace.jpg", role: "President", ig:"graaacexia"}, 
+            {profName: "Becca", link: "becca.jpg", role: "Vice President", ig:"z__ndra"}, 
+            {profName: "Charlotte", link: "charlotte.jpg", role: "Secretary", ig:"charlottiewen_"}, 
+            {profName: "Alexandra", link: "alex.jpg", role: "Treasurer", ig:"z__ndra"}, 
+            {profName: "Emmy", link: "emmy.jpg", role: "Arc Delegate", ig:"luemyi"}
         ], 
         [
-            {profName: "Darren", link: "darren.jpg", ig: "drndja"}, 
-            {profName: "Grace", link: "grace.JPG", ig: "graaacexia"}, 
-            {profName: "Emmy", link: "emmy.PNG", ig: "luemyi"}, 
+            {profName: "Advi", link: "advi.jpg", ig: "advika.ulhaan"}, 
+            {profName: "Ethan", link: "ethan.jpg", ig: "xenn_060"}, 
+            {profName: "Metta", link: "metta.jpg", ig: "metta.jh"}, 
         ], 
         [
-            {profName: "Bronteney", link: "bronteney.jpg", ig: "bronte_kw4"}, 
-            {profName: "Alexandra", link: "alex.jpg", ig: "z__ndra"}, 
+            {profName: "Jana", link: "jana.jpg", ig: "jjana_chan_"}, 
+            {profName: "Zahra", link: "zahra_events.jpg", ig: "zahrahusssen"}, 
         ], 
         [
-            {profName: "Imasha", link: "imasha.jpg", ig: "imashakay"}, 
-            {profName: "Riddhish", link: "riddhish.jpg", ig: "riddhish_c"}, 
+            {profName: "Howard", link: "howard.jpg", ig: "cptdankfish"}, 
+            {profName: "Shelley", link: "shelley.jpg", ig: "z_xue.li"}, 
         ], 
         [
-            {profName: "Albert", link: "albert.jpg", ig: "alberttan204"}, 
-            {profName: "Karen", link: "karenH.JPG", ig: "k_karen06"}, 
-            {profName: "Charlotte", link: "char.jpg", ig: "charlottiewen_"}, 
+            {profName: "Helena", link: "helena.jpg", ig: "hashtag_helena"}, 
+            {profName: "Minh", link: "minh.jpg", ig: "mnhkhngtu"}, 
+            {profName: "Sen", link: "sen.jpg", ig: "s3n_timental"}, 
         ], 
         [
-            {profName: "Becca", link: "becca.jpg", ig: "_becca1201"}, 
-            {profName: "Karen", link: "karenN.jpg", ig: "kkarennguyenn"}, 
+            {profName: "Olivia", link: "liv.jpg", ig: "k_liv1_"}, 
+            {profName: "Zahra", link: "zahra_marketing.jpg", ig: "zahrxz"}, 
         ], 
         [
-            {profName: "Ivory", link: "ivory.PNG", ig: "ivorywithluv"}, 
-            {profName: "Chea", link: "chea.jpg", ig: "chea_bh"}, 
+            {profName: "Alicia", link: "alicia.jpg", ig: "alishxr_"}, 
+            {profName: "Talia", link: "talia.jpg", ig: "talia_loww"}, 
         ]
 
     ], []); 
