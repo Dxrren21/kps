@@ -10,7 +10,7 @@ export default function Carousel() {
 
     const profiles = useMemo(() => [
         [
-            {profName: "Grace", link: "grace.jpg", role: "President", ig:"graaacexia"}, 
+            {profName: "Grace", link: "grace.JPG", role: "President", ig:"graaacexia"}, 
             {profName: "Becca", link: "becca.jpg", role: "Vice President", ig:"z__ndra"}, 
             {profName: "Charlotte", link: "charlotte.jpg", role: "Secretary", ig:"charlottiewen_"}, 
             {profName: "Alexandra", link: "alex.jpg", role: "Treasurer", ig:"z__ndra"}, 
