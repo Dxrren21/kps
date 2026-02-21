@@ -12,12 +12,15 @@ export default function AboutSpeech() {
                         Welcome to UNSW Kpop Society! 
                     </h2>
                     <p className="mx-8 pt-8 text-lg leading-relaxed lg:text-2xl/10  max-md:text-[1rem] max-md:mx-2 text-center text-gray-800">
-                        We are a group of students who share a love for Kpop music and culture. Our society runs a variety of social events, dance workshops, performance showcases and more. We also collaborate with our lovely sponsors and other societies to provide new events and giveaways for our members. 
-
-                        This is a space to make new friends and experiences, so don’t be afraid to join our society or contact us for more info!    
+                        Want to join a community of students who all share a love for Kpop music and culture? KpopSoc is for you! Throughout the year, our society holds a variety of Kpop-themed events including dance workshops, Random Play Dances, crafting days and variety show-style games! 
+                        
+                        We also collaborate with other university societies to provide exciting social events like cruises and pub-crawls, and partnering with our lovely sponsors allows us to share exclusive perks and giveaways for our members! 
+                        
+                        Whether you're a longtime Kpop fan, or just getting into it, our society is a space to make new friends and fun memories, so don't be afraid to join or contact us for more info!
+ 
                     </p>
                     <p className=" text-left pt-[7%] italic max-md:text-[1rem] lg:text-2xl text-center text-pink-300" >
-                        Love, <br /> Georgia (2025 President) ❤️
+                        Love, <br /> Grace (2026 President) ❤️
                     </p>
              
                     
