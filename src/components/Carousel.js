@@ -61,6 +61,13 @@ export default function Carousel() {
     const [display, setDisplay] = useState(profiles[0])
     const [displayTitle, setDisplayTitle] = useState(kpsPort[0])
 
+    useEffect(() => {
+        profiles.flat().forEach((profile) => {
+            const img = new Image();
+            img.src = `/assets/${profile.link}`; 
+        });
+    }, [profiles]);
+
     const handleLeftClick = useCallback(() => {
         setSlide((prevSlide) => (prevSlide === 0 ? profiles.length - 1 : prevSlide - 1));
     }, [profiles.length]);
