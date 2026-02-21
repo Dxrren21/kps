@@ -39,12 +39,12 @@ export default function NoticeBoard() {
             </div> */}
             
             <a 
-                href="https://events.humanitix.com/fright-nights-the-dead-won-t-rest-tonight?fbclid=IwY2xjawNZkKBleHRuA2FlbQIxMABicmlkETFLaE1aT1BDTDM3M09nTlNRAR5oDFSn9jQFQ91P4yV-eYAmdmd0TAOXRCsSQ8WnvKa1Ml7oa84HpJUVPeYV-A_aem_p-UbC2AllSn_UF1A4pGvRg"
+                href="https://docs.google.com/forms/d/1-vLyf3VRpG6grPKdw3sidnDsRBVHkKdtUBgvHbf-Zp4/viewform?edit_requested=true&fbclid=IwY2xjawQF0IRleHRuA2FlbQIxMABicmlkETIwM3lmUkVQNGdjNWpnWWRKc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHs8ph7tv6zB9AxqdW378CczDCZGb1jXm5ikS2S24JCy3lwCMoK0n3USdBtYb_aem_hyoStG3g2L4Q8QjnC21qhQ"
                 rel="noopener noreferrer"
                 className="group relative w-full max-md:w-[80%]">
  
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
-                        Fright Night Tickets 
+                        2026 Kick Off Party
                 </div>
                 <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
