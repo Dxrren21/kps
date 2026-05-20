@@ -18,9 +18,9 @@ export default function Klogo() {
         <div className="flex justify-center">
   <img
     className={`
-      w-[300px] max-w-full h-auto 
-      sm:w-[250px] 
-      md:w-[300px] 
+      w-[700px] max-w-full h-auto 
+      sm:w-[550px] 
+      md:w-[700px]
       transition-opacity duration-1000 ease-in 
       ${isLoaded ? 'opacity-100' : 'opacity-0'}
     `}
