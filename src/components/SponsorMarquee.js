@@ -16,7 +16,7 @@ export default function SponsorMarquee() {
     return(
         <>
             <div className="w-full h-full overflow-hidden">
-                <Marquee direction="left" speed={30} className="w-full h-full bg-[#0E1B40] mt-[3%] flex items-center pt-10 pb-10  mb-10 ">
+                <Marquee direction="left" speed={30} className="w-full h-full bg-ink mt-[3%] flex items-center pt-10 pb-10  mb-10 ">
                     <div className="absolute top-[-30px] left-0 w-full h-[20px] bg-repeat-x bg-film"></div>
                     <div className="flex gap-4 h-full ">
                         <div className="flex flex-col  items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white ml-5 max-md:w-[200px] max-md:h-[250px] ">
