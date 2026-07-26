@@ -2,7 +2,7 @@ export default function Profile({name, link, role, ig}) {
 
     return (
         <div 
-            className="max-md:w-[100px] max-md:h-[130px] max-md:m-5 max-lg:w-[150px] max-lg:h-[180px] max-lg:m-6 xl:m-6 w-[200px] h-[250px] bg-white border border-[5px] border-purple-100 shadow-3xl rounded relative md:m-10">
+            className="max-md:w-[100px] max-md:h-[130px] max-md:m-5 max-lg:w-[150px] max-lg:h-[180px] max-lg:m-6 xl:m-6 w-[200px] h-[250px] bg-white border border-[5px] border-pastel-purple-light shadow-md rounded-xl relative md:m-10 overflow-hidden">
             <a href={`https://www.instagram.com/${ig}`} target="_blank" rel="noopener noreferrer">
                 <img 
                     src={`/assets/${link}`} 
@@ -20,7 +20,7 @@ export default function Profile({name, link, role, ig}) {
                     )}
                 </div>
             </a>
-            <h3 className="text-xl text-gray-800 font-semibold text-center pt-3 max-md:text-sm">{name}</h3>
+            <h3 className="text-xl text-ink font-semibold text-center pt-3 max-md:text-sm">{name}</h3>
         </div>
     )
 }

@@ -17,7 +17,7 @@ export default function JoinModal() {
                        
                 <button 
                     type="button" 
-                    className="w-full h-full text-white bg-pink-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                    className="w-full h-full text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark hover:shadow-lg hover:scale-[1.02] transition-all font-bold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-md"
                     onClick={toggleModal}>
                     <span className="text-xl">
                         Join as a Member
@@ -37,7 +37,7 @@ export default function JoinModal() {
                         <div className="flex gap-5 max-md:flex-col max-md:align-center">
                             <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
                                 <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" className="w-full h-full text-pink-300 border-gray-300 border border-2 hover:border-purple-500  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                    <button type="button" className="w-full h-full text-pastel-pink-dark border-pastel-purple-light border-2 hover:border-pastel-purple-dark  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 transition-colors">
                                     <span className="text-lg">
                                         Society Form
                                     </span>
@@ -49,7 +49,7 @@ export default function JoinModal() {
                      
                             <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
                                 <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" className="w-full h-full text-blue-300 border-gray-300 border border-2 hover:border-purple-500  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                    <button type="button" className="w-full h-full text-pastel-blue-dark border-pastel-purple-light border-2 hover:border-pastel-purple-dark  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 transition-colors">
                                     <span className="text-lg">
                                         Arc Form
                                     </span>
@@ -62,7 +62,7 @@ export default function JoinModal() {
                         </div>
                         
                         <button
-                            className="mt-5 px-5 py-2 bg-purple-400 text-white rounded-lg hover:bg-purple-600"
+                            className="mt-5 px-5 py-2 bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark text-white rounded-full hover:shadow-md transition-shadow"
                             onClick={toggleModal}
                         >
                             Close

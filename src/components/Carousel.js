@@ -118,7 +118,7 @@ export default function Carousel() {
     return(
         <>
             <div {...handlers} className="max-md:h-[70%] flex flex-col w-full h-[50%] m-auto items-center  rounded-3xl ">
-                <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest ">{displayTitle}</h2>
+                <h2 className="font-light uppercase text-center pt-5 pb-5 text-3xl tracking-widest text-ink">{displayTitle}</h2>
                     <div className="flex justify-between w-full items-center px-[7%] max-md:px-1">
                         <img src={rightArrow} alt="left arrow" className="relative w-[60px] h-[60px] scale-x-[-1] max-md:w-[30px] max-md:h-[30px]" onClick={() => handleLeftClick()} ></img>
                         <div className="flex mx-auto max-[1500px]:grid max-[1500px]:grid-cols-2 ">

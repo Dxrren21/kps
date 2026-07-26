@@ -7,10 +7,10 @@ import spotify from "../assets/spotify.svg"
 
 export default function Footer() {
     return (
-        <section className=" flex max-md:flex-col items-start justify-center pb-10 bg-gray-100 mx-auto w-full max-md:text-center">
+        <section className=" flex max-md:flex-col items-start justify-center pb-10 bg-pastel-soft mx-auto w-full max-md:text-center">
              
             <div className="flex flex-col items-center p-8">
-                <h2 className="text-3xl font-bold text-center">For the Latest Updates</h2>
+                <h2 className="text-3xl font-bold text-center text-ink">For the Latest Updates</h2>
                 
                 <div className="flex flex-col w-full pt-12 items-center justify-center">
                     {/* Top Grid (3 columns) */}
@@ -45,12 +45,12 @@ export default function Footer() {
                     
                     <div className="flex flex-col md:items-start p-8 gap-5 items-center ">
                 
-                        <h2 className="text-3xl font-bold max-md:text-center">For Any Inquiries</h2> 
-                        <h3 className="text-xl pt-7 font-semibold">General Inquiries and Feedback</h3>
-                        <p className="md:pl-5">Email us on: unswkpop@gmail.com</p>
-                        <h3 className="text-xl font-semibold">Sponsorships and collaborations</h3>
-                        <p className="md:pl-5">Email us on: mark.unswkpop@gmail.com </p>  
-                        <p className="italic">*All inquiries can also be sent as DMs on Instagram/Facebook!</p>      
+                        <h2 className="text-3xl font-bold max-md:text-center text-ink">For Any Inquiries</h2> 
+                        <h3 className="text-xl pt-7 font-semibold text-ink">General Inquiries and Feedback</h3>
+                        <p className="md:pl-5 text-ink/70">Email us on: unswkpop@gmail.com</p>
+                        <h3 className="text-xl font-semibold text-ink">Sponsorships and collaborations</h3>
+                        <p className="md:pl-5 text-ink/70">Email us on: mark.unswkpop@gmail.com </p>  
+                        <p className="italic text-ink/60">*All inquiries can also be sent as DMs on Instagram/Facebook!</p>      
                      
                              
                     </div>
