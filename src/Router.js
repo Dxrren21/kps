@@ -1,4 +1,4 @@
-import {Routes, Route, useNavigate, useLocation} from 'react-router'
+import {Routes, Route} from 'react-router'
 
 import Home from './pages/Home'
 import Register from './pages/Register'
@@ -12,11 +12,10 @@ import Newsletter from './pages/Newsletter'
 
 
 export default function Router() {
-    const location = useLocation()
     return (
         <>
             <section>
-                {location.pathname !== "/" && <NavBar />}
+                <NavBar />
             </section>
            
             <Routes classname="main">

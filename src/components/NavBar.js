@@ -8,12 +8,11 @@ export default function NavBar() {
     const location = useLocation()
 
     const navItems = [
-        { path: "/", label: "Home"}, 
-        { path: "/about", label: "About Us"}, 
-        { path: "/spons", label: "Sponsors"}, 
-        { path: "/newsletter", label: "Archives"}, 
+        { path: "/", label: "Home"},
+        { path: "/about", label: "About Us"},
+        { path: "/spons", label: "Sponsors"},
+        { path: "/newsletter", label: "Archives"},
     ]
-
 
     const [barVisible, setBarVisible] = useState(false)
 
@@ -39,87 +38,93 @@ export default function NavBar() {
         };
     }, [barVisible, toggleVisible]);
 
-    // if the dimensions change, bar visible must be set to false ?
-
     return (
-        <>  
-            
-            <div className="group fixed z-[60]" onClick={toggleVisible}>
-                <img className="md:hidden fixed w-8 h-8 ml-4 mt-3 opacity-[70%]" alt="sidebar logo" src={sidebar}></img>
+        <>
+            {/* Mobile hamburger trigger */}
+            <div className="group fixed z-[60] md:hidden" onClick={toggleVisible}>
+                <div className="fixed ml-4 mt-3 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center backdrop-blur">
+                    <img className="w-5 h-5 opacity-70" alt="menu" src={sidebar}></img>
+                </div>
             </div>
-            
+
+            {/* Mobile sidebar */}
             {
                 barVisible && (
-                    <section ref={sidebarRef} className="fixed w-3/5 min-h-screen bg-white z-50 opacity-90 flex flex-col items-center h-full pt-[20%]">
-                        
-                      {
+                    <section
+                        ref={sidebarRef}
+                        className="fixed w-3/5 min-h-screen bg-pastel-hero z-50 flex flex-col items-center h-full pt-[20%] shadow-2xl"
+                    >
+                        {
+                            navItems.map(({path, label}) => (
+                                <button
+                                    key={path}
+                                    onClick={() => { navigate(path); toggleVisible(); }}
+                                    className={`block px-3 py-3 text-xl font-semibold max-md:text-base shadow-none focus:shadow-none focus:outline-none transition-colors ${
+                                        location.pathname === path
+                                            ? "text-ink underline underline-offset-8 decoration-pastel-purple-dark"
+                                            : "text-ink/70 hover:text-ink hover:underline hover:underline-offset-8 hover:decoration-pastel-pink-dark"
+                                    }`}
+                                >
+                                    {label}
+                                </button>
+                            ))
+                        }
+
+                        <button
+                            className="block py-4 text-lg text-ink/70 hover:text-ink hover:underline hover:underline-offset-8 hover:decoration-pastel-pink-dark shadow-none"
+                            onClick={() => { navigate("/", { state: { scrollToNotices: true } }); toggleVisible(); }}
+                        >
+                            Notices
+                        </button>
+                        <button
+                            className="mt-4 px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg transition-shadow"
+                            onClick={() => { navigate("/about", { state: { scrollToJoin: true } }); toggleVisible(); }}
+                        >
+                            Join Us
+                        </button>
+                    </section>
+                )
+            }
+
+            {/* Desktop sticky navbar */}
+            <div className="hidden md:flex h-[76px] bg-white/80 backdrop-blur-md fixed w-full z-[100] items-center justify-between px-8 shadow-sm border-b border-pastel-purple-light">
+                <img
+                    src={logo}
+                    className="w-[56px] h-[50px] object-contain cursor-pointer"
+                    alt="KPS logo"
+                    onClick={() => navigate("/")}
+                ></img>
+
+                <div className="flex items-center gap-2">
+                    {
                         navItems.map(({path, label}) => (
-                            <button 
+                            <button
                                 key={path}
                                 onClick={() => navigate(path)}
-                                className={`block px-3 py-2 text-xl font-semibold max-md:text-sm shadow-none focus:shadow-none focus:outline-none ${
+                                className={`px-4 py-2 text-base font-semibold rounded-full transition-colors ${
                                     location.pathname === path
-                                        ? "text-blue-400 underline underline-offset-8 decoration-pink-400"
-                                        : "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400"
+                                        ? "text-ink bg-pastel-purple-light"
+                                        : "text-ink/70 hover:text-ink hover:bg-pastel-blue-light shadow-none"
                                 }`}
                             >
                                 {label}
                             </button>
                         ))
-
-                      }
-                        
-                        <button 
-                            className="block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
-                            onClick={() => navigate("/", { state: { scrollToNotices: true } })}
-                        >
-                            Notices
-                        </button>
-                        <button 
-                            className=" block py-5 text-l text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
-                            onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
-                            Join Us
-                        </button>
-                        
-                        
-                    </section>
-                    
-                )
-            }
-            <div className="flex h-[70px] bg-white max-md:hidden fixed w-full z-[100] align-center shadow">  
-                <img src={logo} className="w-[68px] h-[60px] pl-5 pt-4 pr-1" onClick={() => navigate("/")}></img>
-                {
-                    navItems.map(({path, label}) => (
-                        <button
-                            key={path}
-                            onClick={() => navigate(path)}
-                            className={`block px-3 py-2 text-xl font-semibold max-md:text-sm ${
-                                location.pathname === path
-                                    ? "text-blue-400 underline underline-offset-8 decoration-pink-400 shadow-none"
-                                    :  "text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 shadow-none"
-                            }`}
-                        >
-                            {label}
-                        </button>
-                    ))
-                    
-                }
-                    <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none"
+                    }
+                    <button
+                        className="px-4 py-2 text-base font-semibold rounded-full text-ink/70 hover:text-ink hover:bg-pastel-pink-light transition-colors shadow-none"
                         onClick={() => navigate("/", { state: { scrollToNotices: true } })}
                     >
                         Notices
                     </button>
-                    <button 
-                        className="  max-md:text-sm block px-3 py-2 text-xl text-blue-400 hover:underline hover:underline-offset-8 hover:decoration-pink-400 font-semibold shadow-none  "
-                        onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
-                        Join Us
-                    </button>
-                
                 </div>
 
-
+                <button
+                    className="px-6 py-2.5 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
+                    onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
+                    Join Us
+                </button>
+            </div>
         </>
-        
     )
 }
