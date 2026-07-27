@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router"
 import pstar from "../assets/pstar.svg"
-import groupPhoto from "../assets/KPS2025.JPG"
+import groupPhoto from "../assets/KPS2025.jpeg"
 
 export default function AboutPreview() {
     const navigate = useNavigate()

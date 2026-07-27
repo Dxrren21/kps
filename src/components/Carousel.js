@@ -37,7 +37,7 @@ export default function Carousel() {
         ], 
         [
             {profName: "Advi", link: "advi.jpg", ig: "advika.ulhaan"}, 
-            {profName: "Ethan", link: "ethan.JPG", ig: "xenn_060"}, 
+            {profName: "Ethan", link: "ethan.jpeg", ig: "xenn_060"}, 
             {profName: "Metta", link: "metta.jpeg", ig: "metta.jh"}, 
         ], 
         [
