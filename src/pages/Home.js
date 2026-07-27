@@ -2,6 +2,8 @@ import Klogo from "../components/KLogo"
 import NoticeBoard from "../components/NoticeBoard"
 import ScrollArrow from "../components/ScrollArrow"
 import SponsorMarquee from "../components/SponsorMarquee"
+import EventsCarousel from "../components/EventsCarousel"
+import AboutPreview from "../components/AboutPreview"
 import { useRef } from 'react'
 import ig from "../assets/ig.svg"
 import fb from "../assets/fb.svg"
@@ -11,6 +13,8 @@ import disc from "../assets/discord.svg"
 import { useEffect } from "react"
 import { useLocation, useNavigate } from "react-router"
 import spotify from "../assets/spotify.svg"
+import boy from "../assets/boy.png"
+import girl from "../assets/girl.png"
 
 export default function Home() {
     const noticeRef = useRef()
@@ -43,18 +47,24 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <button
-                onClick={() => navigate("/about", { state: { scrollToJoin: true } })}
-                className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
-              >
-                BECOME A MEMBER
-              </button>
-              <button
-                onClick={() => noticeRef.current?.scrollIntoView({ behavior: "smooth" })}
-                className="px-8 py-3 rounded-full text-base font-semibold text-ink bg-white/80 border border-pastel-purple-dark/30 shadow-sm hover:bg-white hover:shadow-md transition-all"
-              >
-                LATEST NOTICES
-              </button>
+              <div className="group relative">
+                <button
+                  onClick={() => navigate("/about", { state: { scrollToJoin: true } })}
+                  className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
+                >
+                  BECOME A MEMBER
+                </button>
+                <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+              </div>
+              <div className="group relative">
+                <button
+                  onClick={() => noticeRef.current?.scrollIntoView({ behavior: "smooth" })}
+                  className="px-8 py-3 rounded-full text-base font-semibold text-ink bg-white/80 border border-pastel-purple-dark/30 shadow-sm hover:bg-white hover:shadow-md transition-all"
+                >
+                  LATEST NOTICES
+                </button>
+                <img src={girl} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+              </div>
             </div>
           </div>
 
@@ -62,6 +72,9 @@ export default function Home() {
             <ScrollArrow scrollToRef={noticeRef} />
           </div>
         </section>
+
+        {/* ABOUT */}
+        <AboutPreview />
 
         {/* SPONSORS / AFFILIATIONS */}
         <section className="w-full bg-white py-14 px-6">
@@ -72,21 +85,24 @@ export default function Home() {
           <SponsorMarquee />
         </section>
 
-        {/* NOTICEBOARD / HIGHLIGHTS */}
+        {/* NOTICEBOARD + EVENTS */}
         <section
             ref={noticeRef}
             className="w-full bg-pastel-soft py-20 px-6 md:px-16"
         >
-          <div className="max-w-6xl mx-auto md:flex md:gap-16">
-            <div className="md:basis-1/3 max-md:text-center mb-10 md:mb-0">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-10">
               <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">GET INVOLVED</h2>
               <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Noticeboard.</h3>
-              <p className="mt-4 text-ink/70">
+              <p className="mt-4 text-ink/70 max-w-xl">
                 Everything you need to sign up, get involved, and stay in the loop with KPS.
               </p>
             </div>
-            <div className="md:basis-2/3">
-              <NoticeBoard />
+
+            <NoticeBoard />
+
+            <div className="mt-16">
+              <EventsCarousel embedded />
             </div>
           </div>
         </section>

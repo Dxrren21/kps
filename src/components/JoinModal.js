@@ -1,77 +1,21 @@
-import { useState } from "react"
 import boy from "../assets/boy.png"
 
 export default function JoinModal() {
-
-    const [visibility, setVisibility] = useState(false)
-
-
-
-    const toggleModal = () => {
-        setVisibility(!visibility)
-    }
-
     return (
-        <>
-            <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
-                       
-                <button 
-                    type="button" 
+        <div className="group relative w-[500px] h-[120px] max-md:w-[80%]">
+
+            <a href="https://campus.hellorubric.com/?eid=70845" target="_blank" rel="noopener noreferrer">
+                <button
+                    type="button"
                     className="w-full h-full text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark hover:shadow-lg hover:scale-[1.02] transition-all font-bold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 shadow-md"
-                    onClick={toggleModal}>
+                >
                     <span className="text-xl">
                         Join as a Member
                     </span>
-
                 </button>
-                
-                <img src={boy} alt="join" className="relative top-[-140%] left-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-            </div>
-            
-            
+            </a>
 
-            {visibility && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 max-md:w-full"  onClick={toggleModal}>
-                    <div className="bg-white p-12 rounded-lg shadow-lg max-w-md flex items-center justify-center flex-col">
-                        <h2 className="text-lg font-semibold text-center pb-10">Please fill out these two forms to become an official member!</h2>
-                        <div className="flex gap-5 max-md:flex-col max-md:align-center">
-                            <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
-                                <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" className="w-full h-full text-pastel-pink-dark border-pastel-purple-light border-2 hover:border-pastel-purple-dark  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 transition-colors">
-                                    <span className="text-lg">
-                                        Society Form
-                                    </span>
-                
-                                    </button>
-                                </a>
-                                <img src={boy} alt="boy" className="relative top-[-140%] left-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-                            </div>
-                     
-                            <div className="group relative max-md:w-[250px]  w-[200px] h-[80px] max-md:w-[80%]">
-                                <a href="https://forms.gle/5RJ3mJwch4v2Evo57" target="_blank" rel="noopener noreferrer">
-                                    <button type="button" className="w-full h-full text-pastel-blue-dark border-pastel-purple-light border-2 hover:border-pastel-purple-dark  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 transition-colors">
-                                    <span className="text-lg">
-                                        Arc Form
-                                    </span>
-                
-                                    </button>
-                                </a>
-                                <img src={boy} alt="boy" className="relative top-[-140%] left-[70%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
-                            </div>
-             
-                        </div>
-                        
-                        <button
-                            className="mt-5 px-5 py-2 bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark text-white rounded-full hover:shadow-md transition-shadow"
-                            onClick={toggleModal}
-                        >
-                            Close
-                        </button>
-                    </div>
-                </div>
-            )}
-
-           
-        </>
+            <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+        </div>
     )
 }

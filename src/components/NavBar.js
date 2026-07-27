@@ -2,6 +2,8 @@ import { useNavigate, useLocation } from "react-router-dom"
 import { useRef, useState, useEffect, useCallback } from "react"
 import sidebar from "../assets/sidebar.png"
 import logo from '../assets/kpopLogo.png'
+import boy from "../assets/boy.png"
+import girl from "../assets/girl.png"
 
 export default function NavBar() {
     const navigate = useNavigate()
@@ -76,12 +78,15 @@ export default function NavBar() {
                         >
                             Notices
                         </button>
-                        <button
-                            className="mt-4 px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg transition-shadow"
-                            onClick={() => { navigate("/about", { state: { scrollToJoin: true } }); toggleVisible(); }}
-                        >
-                            Join Us
-                        </button>
+                        <div className="group relative mt-4">
+                            <button
+                                className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg transition-shadow"
+                                onClick={() => { navigate("/about", { state: { scrollToJoin: true } }); toggleVisible(); }}
+                            >
+                                Join Us
+                            </button>
+                            <img src={girl} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                        </div>
                     </section>
                 )
             }
@@ -119,11 +124,14 @@ export default function NavBar() {
                     </button>
                 </div>
 
-                <button
-                    className="px-6 py-2.5 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
-                    onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
-                    Join Us
-                </button>
+                <div className="group relative">
+                    <button
+                        className="px-6 py-2.5 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
+                        onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
+                        Join Us
+                    </button>
+                    <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                </div>
             </div>
         </>
     )
