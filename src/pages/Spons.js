@@ -10,7 +10,7 @@ export default function Spons() {
                 <h1 className="mt-2 text-4xl md:text-5xl text-center font-extrabold text-ink">K-Perks</h1>
 
                 <h3 className="mt-6 max-w-2xl text-center text-lg text-ink/80 bg-white/80 p-6 rounded-3xl shadow-sm">
-                    A big thank you to our amazing 2025 sponsors that have given these exciting rewards for our members!
+                    A big thank you to our amazing 2026 sponsors that have given these exciting rewards for our members!
                 </h3>
 
                 <div className="flex justify-center flex-wrap p-8 gap-5">
