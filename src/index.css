@@ -27,3 +27,18 @@ code {
 button {
   @apply shadow-md transition-shadow focus:shadow-none;
 }
+
+.sparkle-particle {
+  animation: sparkle-fade 700ms ease-out forwards;
+}
+
+@keyframes sparkle-fade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(var(--r, 0deg)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--drift, 0px)), -70%) rotate(var(--r, 0deg)) scale(0.3);
+  }
+}
