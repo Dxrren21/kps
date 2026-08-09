@@ -13,6 +13,8 @@ import { useNavigate } from "react-router"
 import spotify from "../assets/spotify.svg"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
+import arcLogo from "../assets/arc_logo.png"
+import unswLogo from "../assets/unsw_logo.png"
 
 export default function Home() {
     const eventsRef = useRef()
@@ -26,10 +28,16 @@ export default function Home() {
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden bg-pastel-hero px-6 md:pt-[76px]">
           <div className="absolute inset-0 bg-white/10 pointer-events-none"></div>
 
-          <div className="relative z-10 flex flex-col items-center text-center pt-16 md:pt-10">
-            <Klogo />
+          {/* AFFILIATION LOGOS */}
+          <div className="absolute bottom-8 right-8 z-10 flex items-center gap-6 opacity-90">
+            <img src={arcLogo} alt="Arc UNSW" className="h-10 md:h-14 object-contain drop-shadow-md" />
+            <img src={unswLogo} alt="UNSW Sydney" className="h-10 md:h-14 object-contain drop-shadow-md" />
+          </div>
 
-            <h1 className="mt-6 text-3xl md:text-5xl font-extrabold text-ink tracking-tight max-w-3xl">
+          <div className="relative z-10 flex flex-col items-center text-center pt-10 md:pt-6">
+            <Klogo className="w-[520px] sm:w-[420px] md:w-[520px]" />
+
+            <h1 className="mt-4 text-2xl md:text-4xl font-extrabold text-ink tracking-tight max-w-3xl">
               WHERE KPOP FANS BECOME FAMILY.
             </h1>
             <p className="mt-4 max-w-xl text-ink/70 text-base md:text-lg">
@@ -37,11 +45,11 @@ export default function Home() {
               and a community that gets just as hyped as you do.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
               <div className="group relative">
                 <button
                   onClick={() => navigate("/join")}
-                  className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
+                  className="px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
                 >
                   BECOME A MEMBER
                 </button>
@@ -50,7 +58,7 @@ export default function Home() {
               <div className="group relative">
                 <button
                   onClick={() => navigate("/events")}
-                  className="px-8 py-3 rounded-full text-base font-semibold text-ink bg-white/80 border border-pastel-purple-dark/30 shadow-sm hover:bg-white hover:shadow-md transition-all"
+                  className="px-6 py-2.5 rounded-full text-sm font-semibold text-ink bg-white/80 border border-pastel-purple-dark/30 shadow-sm hover:bg-white hover:shadow-md transition-all"
                 >
                   OUR EVENTS
                 </button>
@@ -59,7 +67,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative z-10 mt-14">
+          <div className="relative z-10 mt-10">
             <ScrollArrow scrollToRef={eventsRef} />
           </div>
         </section>

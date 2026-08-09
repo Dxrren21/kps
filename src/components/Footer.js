@@ -47,7 +47,7 @@ export default function Footer() {
                 
                         <h2 className="text-3xl font-bold max-md:text-center text-ink">For Any Inquiries</h2> 
                         <h3 className="text-xl pt-7 font-semibold text-ink">General Inquiries and Feedback</h3>
-                        <p className="md:pl-5 text-ink/70">Email us on: unswkpop@gmail.com</p>
+                        <p className="md:pl-5 text-ink/70">Email us on: exec.unswkpop@gmail.com</p>
                         <h3 className="text-xl font-semibold text-ink">Sponsorships and collaborations</h3>
                         <p className="md:pl-5 text-ink/70">Email us on: mark.unswkpop@gmail.com </p>  
                         <p className="italic text-ink/60">*All inquiries can also be sent as DMs on Instagram/Facebook!</p>      

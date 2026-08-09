@@ -61,8 +61,8 @@ const contactRows = [
     },
     {
         label: "Email",
-        sub: "unswkpop@gmail.com",
-        href: "mailto:unswkpop@gmail.com",
+        sub: "exec.unswkpop@gmail.com",
+        href: "mailto:exec.unswkpop@gmail.com",
         icon: (
             <div className="w-11 h-11 rounded-lg bg-pastel-blue-light flex items-center justify-center shrink-0">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 text-pastel-blue-dark" fill="none" stroke="currentColor" strokeWidth="2">
@@ -85,7 +85,7 @@ export default function Join() {
                 <h1 className="mt-2 text-4xl md:text-5xl font-extrabold text-ink">Join the Community</h1>
                 <p className="mt-6 max-w-2xl text-ink/70 text-base md:text-lg">
                     Whether you're a first-year discovering K-pop or a long-time stan ready to dance it out,
-                    Kpop Society has a place for you. Follow us on socials, come to our events, and become part of
+                    KPOP SOCIETY has a place for you. Follow us on socials, come to our events, and become part of
                     UNSW's home for all things K-pop.
                 </p>
             </section>

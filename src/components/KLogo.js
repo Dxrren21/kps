@@ -1,7 +1,7 @@
 import logo from '../assets/kpsLogo.png'
 import {useState, useEffect} from 'react'
 
-export default function Klogo() {
+export default function Klogo({ className }) {
 
     const [isLoaded, setIsLoaded ] = useState(false)
     
@@ -18,9 +18,7 @@ export default function Klogo() {
         <div className="flex justify-center">
   <img
     className={`
-      w-[700px] max-w-full h-auto 
-      sm:w-[550px] 
-      md:w-[700px]
+      ${className || "w-[700px] sm:w-[550px] md:w-[700px]"} max-w-full h-auto
       transition-opacity duration-1000 ease-in 
       ${isLoaded ? 'opacity-100' : 'opacity-0'}
     `}
