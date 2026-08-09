@@ -76,7 +76,7 @@ function EventRow({ category, items }) {
     )
 }
 
-export default function EventsCarousel({ embedded = false }) {
+export default function EventsCarousel({ embedded = false, showHeading = true }) {
     if (events.length === 0) {
         return null
     }
@@ -96,14 +96,14 @@ export default function EventsCarousel({ embedded = false }) {
 
     return (
         <section className={embedded ? "w-full" : "w-full bg-white py-16 px-6"}>
-            {embedded ? (
+            {showHeading && (embedded ? (
                 <h3 className="text-3xl md:text-4xl font-extrabold text-ink mb-8">Explore Our Events.</h3>
             ) : (
                 <div className="max-w-6xl mx-auto mb-10">
                     <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">PAST HIGHLIGHTS</h2>
                     <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-ink">Explore Our Events.</h1>
                 </div>
-            )}
+            ))}
 
             <div className={embedded ? "" : "max-w-6xl mx-auto"}>
                 {categories.map((category) => (

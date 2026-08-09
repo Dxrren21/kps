@@ -85,9 +85,9 @@ export default function Home() {
             <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
               <div>
                 <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">WHAT'S ON</h2>
-                <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Upcoming Events.</h3>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Explore Our Events.</h3>
                 <p className="mt-4 text-ink/70 max-w-xl">
-                  A taste of what's coming up. See the full calendar for everything Kpop Society has planned.
+                  A taste of what's coming up. See the full calendar for everything KPOP SOCIETY has planned.
                 </p>
               </div>
               <button
@@ -98,14 +98,14 @@ export default function Home() {
               </button>
             </div>
 
-            <EventsCarousel embedded />
+            <EventsCarousel embedded showHeading={false} />
           </div>
         </section>
 
         {/* SOCIALS / CLOSING BANNER */}
         <section className="w-full bg-white py-16 px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-ink">Want to stay up to date?</h2>
-          <p className="mt-2 text-ink/70">Follow along for comebacks, socials, and everything Kpop Society.</p>
+          <p className="mt-2 text-ink/70">Follow along for comebacks, socials, and everything KPOP SOCIETY.</p>
           <div className="grid gap-6 pt-8 grid-cols-3 md:grid-cols-6 max-w-xl mx-auto">
             <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
               <img src={ig} alt="Instagram" className="w-12 h-12 mx-auto transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
