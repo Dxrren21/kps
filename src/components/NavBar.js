@@ -88,7 +88,7 @@ export default function NavBar() {
                 <img
                     src={logo}
                     className="w-[56px] h-[50px] object-contain cursor-pointer"
-                    alt="KPS logo"
+                    alt="KPOP SOCIETY logo"
                     onClick={() => navigate("/")}
                 ></img>
 

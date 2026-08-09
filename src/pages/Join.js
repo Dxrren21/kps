@@ -85,7 +85,7 @@ export default function Join() {
                 <h1 className="mt-2 text-4xl md:text-5xl font-extrabold text-ink">Join the Community</h1>
                 <p className="mt-6 max-w-2xl text-ink/70 text-base md:text-lg">
                     Whether you're a first-year discovering K-pop or a long-time stan ready to dance it out,
-                    KPS has a place for you. Follow us on socials, come to our events, and become part of
+                    Kpop Society has a place for you. Follow us on socials, come to our events, and become part of
                     UNSW's home for all things K-pop.
                 </p>
             </section>
@@ -97,7 +97,7 @@ export default function Join() {
                     <h1 className="mt-2 text-3xl md:text-4xl font-extrabold text-ink">How to Join</h1>
                     <p className="mt-4 max-w-2xl mx-auto text-ink/70">
                         Membership runs through Rubric, and you'll be asked whether you're an Arc member
-                        or not — the price adjusts automatically depending on which you choose.
+                        or not, the price adjusts automatically depending on which you choose.
                     </p>
                 </div>
 
@@ -136,7 +136,7 @@ export default function Join() {
                     >
                         <h3 className="text-xl font-bold text-ink">Non-Arc Members</h3>
                         <p className="mt-3 text-ink/70 text-sm leading-relaxed">
-                            Not an Arc member? No worries — you can still join! Select the non-Arc option on
+                            Not an Arc member? No worries. You can still join! Select the non-Arc option on
                             Rubric to sign up at the standard rate.
                         </p>
                         <a href={RUBRIC_URL} target="_blank" rel="noopener noreferrer">
@@ -156,8 +156,8 @@ export default function Join() {
                 </div>
 
                 <p className="mt-10 text-center text-ink/60 text-sm max-w-xl mx-auto">
-                    🎟️ Tickets for our socials, workshops, and comebacks are also sold through Rubric —
-                    follow our Instagram so you don't miss a ticket drop!
+                    🎟️ Tickets for our socials, workshops, and comebacks are also sold through Rubric.
+                    Follow our Instagram so you don't miss a ticket drop!
                 </p>
             </section>
 

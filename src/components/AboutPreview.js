@@ -15,7 +15,7 @@ export default function AboutPreview() {
                     <h1 className="mt-2 text-4xl md:text-5xl font-extrabold text-ink">About Us.</h1>
 
                     <p className="mt-6 text-ink/70 text-xl leading-relaxed">
-                        We're UNSW's home for all things K-pop — a community built around a shared
+                        We're UNSW's home for all things K-pop, a community built around a shared
                         love of the music, the culture, and everything in between.
                     </p>
 
@@ -26,7 +26,7 @@ export default function AboutPreview() {
                     </p>
 
                     <p className="mt-4 text-ink/70 text-xl leading-relaxed">
-                        Whether you're a longtime fan or just getting into K-pop, KPS is a space to
+                        Whether you're a longtime fan or just getting into K-pop, Kpop Society is a space to
                         make new friends and memories.
                     </p>
 
@@ -44,7 +44,7 @@ export default function AboutPreview() {
                     <img src={pstar} alt="" className="absolute -bottom-8 -right-4 w-14 h-14 opacity-60" />
 
                     <div className="relative aspect-[4/3] w-full rounded-[2.5rem] bg-pastel-hero shadow-lg overflow-hidden">
-                        <img src={groupPhoto} alt="KPS members" className="w-full h-full object-cover" />
+                        <img src={groupPhoto} alt="Kpop Society members" className="w-full h-full object-cover" />
                     </div>
                 </div>
 

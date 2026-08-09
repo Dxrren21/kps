@@ -9,7 +9,7 @@ export default function Events() {
                 <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-purple-dark">PAST HIGHLIGHTS</h2>
                 <h1 className="mt-2 text-4xl md:text-5xl font-extrabold text-ink">Our Events.</h1>
                 <p className="mt-6 max-w-2xl text-ink/70 text-base md:text-lg">
-                    From dance workshops to socials and comebacks &mdash; here's everything KPS has been up to.
+                    From dance workshops to socials and comebacks, here's everything Kpop Society has been up to.
                 </p>
             </section>
 

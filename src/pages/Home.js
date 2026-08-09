@@ -33,7 +33,7 @@ export default function Home() {
               WHERE KPOP FANS BECOME FAMILY.
             </h1>
             <p className="mt-4 max-w-xl text-ink/70 text-base md:text-lg">
-              UNSW's home for all things K-pop &mdash; dance covers, socials, comebacks,
+              UNSW's home for all things K-pop, dance covers, socials, comebacks,
               and a community that gets just as hyped as you do.
             </p>
 
@@ -87,7 +87,7 @@ export default function Home() {
                 <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">WHAT'S ON</h2>
                 <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Upcoming Events.</h3>
                 <p className="mt-4 text-ink/70 max-w-xl">
-                  A taste of what's coming up &mdash; see the full calendar for everything KPS has planned.
+                  A taste of what's coming up. See the full calendar for everything Kpop Society has planned.
                 </p>
               </div>
               <button
@@ -105,7 +105,7 @@ export default function Home() {
         {/* SOCIALS / CLOSING BANNER */}
         <section className="w-full bg-white py-16 px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-ink">Want to stay up to date?</h2>
-          <p className="mt-2 text-ink/70">Follow along for comebacks, socials, and everything KPS.</p>
+          <p className="mt-2 text-ink/70">Follow along for comebacks, socials, and everything Kpop Society.</p>
           <div className="grid gap-6 pt-8 grid-cols-3 md:grid-cols-6 max-w-xl mx-auto">
             <a href="https://www.instagram.com/unswkpop/" target="_blank" rel="noopener noreferrer">
               <img src={ig} alt="Instagram" className="w-12 h-12 mx-auto transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80" />
