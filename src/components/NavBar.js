@@ -10,9 +10,9 @@ export default function NavBar() {
     const navItems = [
         { path: "/", label: "Home"},
         { path: "/about", label: "About Us"},
+        { path: "/newsletter", label: "Archives"},
         { path: "/events", label: "Events"},
         { path: "/spons", label: "Sponsors"},
-        { path: "/newsletter", label: "Archives"},
     ]
 
     const [barVisible, setBarVisible] = useState(false)
