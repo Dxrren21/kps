@@ -14,19 +14,19 @@ export default function Newsletter() {
                         <button type="button" className="w-[260px] h-[64px] text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center shadow-md hover:shadow-lg hover:scale-105 transition-all">
                             Subscribe to Our Newsletter
                         </button>
-                        <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                        <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                     </a>
                     <a href="https://tellonym.me/unswkpop" target="_blank" rel="noopener noreferrer" className="group relative">
                         <button type="button" className="w-[260px] h-[64px] bg-white text-pastel-pink-dark border-2 border-pastel-purple-light hover:border-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center transition-colors">
                             Send us a Tellonym
                         </button>
-                        <img src={girl} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                        <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                     </a>
                     <a href="https://drive.google.com/drive/folders/1TuGK6EO7TXirLFM9ZyB8s6X8CoQHH2Cd?usp=sharing" target="_blank" rel="noopener noreferrer" className="group relative">
                         <button type="button" className="w-[260px] h-[64px] bg-white text-pastel-blue-dark border-2 border-pastel-purple-light hover:border-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center transition-colors">
                             2025 Newsletter Archive
                         </button>
-                        <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                        <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                     </a>
                 </div>
             </section>
@@ -44,7 +44,7 @@ export default function Newsletter() {
                     <button type="button" className="w-[260px] h-[64px] bg-white text-pastel-blue-dark border-2 border-pastel-purple-light hover:border-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center transition-colors">
                         Dance Workshop Videos
                     </button>
-                    <img src={girl} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                    <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                 </a>
             </section>
 

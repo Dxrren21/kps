@@ -25,7 +25,7 @@ export default function JoinIntModal() {
 
                 </button>
                 
-                <img src={girl} alt="join" className="absolute top-[-50%] right-0 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                <img src={girl} alt="join" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             </div>
 
             {visibility && (

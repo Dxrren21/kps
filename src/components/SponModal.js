@@ -1,5 +1,5 @@
 import { useState } from "react"
-import boy from "../assets/boy.png"
+import girl from "../assets/girl.png"
 export default function SponModal() {
 
     const [visibility, setVisibility] = useState(false)
@@ -19,7 +19,7 @@ export default function SponModal() {
                     onClick={toggleModal}>
                         Sponsor us
                     </button>
-                    <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                    <img src={girl} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             </div>
 
             {visibility && (

@@ -85,7 +85,7 @@ export default function NavBar() {
                             >
                                 Join Us
                             </button>
-                            <img src={girl} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                            <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                         </div>
                     </section>
                 )
@@ -130,7 +130,7 @@ export default function NavBar() {
                         onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
                         Join Us
                     </button>
-                    <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                    <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                 </div>
             </div>
         </>

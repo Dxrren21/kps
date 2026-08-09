@@ -15,7 +15,7 @@ export default function NoticeBoard() {
                         Subcommittee Recruitment Form
                         
                     </div>
-                    <img src={girl} alt="internal team" className="absolute top-[-33%] right-0 md:w-[120px] md:h-[110px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                    <img src={girl} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 md:w-[120px] md:h-[110px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             
                 </a>
                 <a 
@@ -29,7 +29,7 @@ export default function NoticeBoard() {
                         Subcommittee Port Descriptions
                         
                     </div>
-                    <img src={girl} alt="internal team" className="absolute top-[-33%] right-0 md:w-[120px] md:h-[110px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                    <img src={girl} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 md:w-[120px] md:h-[110px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             
                 </a>
             </div> */}
@@ -43,7 +43,7 @@ export default function NoticeBoard() {
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
                         UNSW Kpop Signup Form 
                 </div>
-                <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                <img src={boy} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a> 
             
@@ -57,7 +57,7 @@ export default function NoticeBoard() {
                 <div className="flex justify-center items-center text-center max-md:w-full max-md:p-5 max-md:text-sm bg-white w-[100%] h-[200px] max-md:h-[120px] rounded text-xl text-gray-700 font-medium border-2 border-gray-500 hover:border-[#273b92] font-semibold tracking-wider md:hover:text-[1.3rem] hover:border-2">
                         Executive nomination form
                 </div>
-                <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                <img src={boy} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
 
             </a>
             {/* <div className="group relative w-full max-md:w-[80%]">
@@ -66,7 +66,7 @@ export default function NoticeBoard() {
                     onClick={() => navigate("/about", { state: { scrollToMeet: true } })}>
                     Meet the 2025 UNSW Kpop Society Team
                 </div>
-                <img src={boy} alt="internal team" className="absolute top-[-30%] right-0 md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                <img src={boy} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] md:w-[100px] md:h-[100px] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
             </div> */}
             
             

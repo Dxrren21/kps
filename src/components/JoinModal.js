@@ -15,7 +15,7 @@ export default function JoinModal() {
                 </button>
             </a>
 
-            <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+            <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
         </div>
     )
 }

@@ -19,7 +19,7 @@ export default function Spons() {
                         <button type="button" className="w-[260px] h-[64px] text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center shadow-md hover:shadow-lg hover:scale-105 transition-all">
                             Become a member
                         </button>
-                        <img src={boy} alt="" className="absolute top-[-35%] right-0 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
+                        <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                     </a>
                     <SponModal />
                 </div>

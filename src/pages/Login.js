@@ -37,7 +37,7 @@ export default function Login() {
     
                         </button>
                
-                        <img src={boy} alt="Image 2" className="relative top-[-140%] left-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                        <img src={boy} alt="mascot" className="relative top-[-140%] left-0 w-[80px] h-[80px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                     </div>
                     <div className="group relative w-[500px] h-[120px] max-md:w-[80%]" onClick={toggleBadModal}>
                         <button type="button" className="w-full h-full text-white bg-purple-300 hover:border hover:border-2 hover:border-purple-500 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
@@ -46,7 +46,7 @@ export default function Login() {
                             </span>
                             
                         </button>
-                        <img src={girl} alt="internal team" className="absolute top-[-50%] right-0 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
+                        <img src={girl} alt="internal team" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[100px] h-[100px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-10" />
                     </div>
                     
                 </div>
