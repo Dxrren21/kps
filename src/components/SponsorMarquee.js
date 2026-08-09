@@ -97,10 +97,10 @@ export default function SponsorMarquee() {
     }
 
     return (
-        <div className="w-full h-full overflow-hidden">
+        <div className="w-full">
             <div
                 ref={scrollRef}
-                className="no-scrollbar w-full h-full bg-ink mt-[3%] flex items-center pt-10 pb-10 mb-10 overflow-x-auto cursor-grab select-none relative"
+                className="no-scrollbar relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-ink mt-[3%] mb-10 overflow-x-auto cursor-grab select-none shadow-lg"
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
                 onMouseUp={endDrag}
@@ -109,25 +109,35 @@ export default function SponsorMarquee() {
                 onWheel={registerInteraction}
                 onScroll={wrapScroll}
             >
-                <div className="absolute top-[-30px] left-0 w-full h-[20px] bg-repeat-x bg-film"></div>
-                <div className="flex gap-4 h-full">
-                    {doubledSponsors.map((sponsor, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white ml-5 max-md:w-[200px] max-md:h-[250px] shrink-0"
-                        >
-                            <img
-                                src={sponsor.logo}
-                                alt={`${sponsor.name} logo`}
-                                draggable={false}
-                                className="h-[100px] object-contain max-md:h-[80px]"
-                            />
-                            <span className="text-lg pt-4 font-semibold text-gray-700 text-center max-md:text-base">{sponsor.name}</span>
-                            <span className="text-sm pt-2 text-gray-500 text-center leading-snug max-md:text-xs">{sponsor.offer}</span>
-                        </div>
-                    ))}
+                {/* inline-block so this shrinks-to-fit the full card row width,
+                    meaning the sprocket strips scroll in lockstep with the cards */}
+                <div className="inline-block align-top min-w-full">
+                    {/* Top sprocket strip: extra height + bg-bottom pushes the squares
+                        toward the cards, leaving a thicker purple margin on the outer edge */}
+                    <div className="w-full h-[30px] bg-repeat-x bg-bottom bg-film bg-ink"></div>
+
+                    <div className="flex gap-4 pl-5 py-3">
+                        {doubledSponsors.map((sponsor, index) => (
+                            <div
+                                key={index}
+                                className="flex flex-col items-center justify-start pt-12 p-4 w-[300px] h-[350px] bg-white shrink-0 max-md:w-[200px] max-md:h-[250px]"
+                            >
+                                <img
+                                    src={sponsor.logo}
+                                    alt={`${sponsor.name} logo`}
+                                    draggable={false}
+                                    className="h-[100px] object-contain max-md:h-[80px]"
+                                />
+                                <span className="text-lg pt-4 font-semibold text-gray-700 text-center max-md:text-base">{sponsor.name}</span>
+                                <span className="text-sm pt-2 text-gray-500 text-center leading-snug max-md:text-xs">{sponsor.offer}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Bottom sprocket strip: mirror of the top, bg-top pushes squares
+                        toward the cards, thicker purple margin on the outer edge */}
+                    <div className="w-full h-[30px] bg-repeat-x bg-top bg-film bg-ink"></div>
                 </div>
-                <div className="absolute bottom-[-30px] left-0 w-full h-[20px] bg-repeat-x bg-film"></div>
             </div>
         </div>
     )
