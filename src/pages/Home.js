@@ -1,5 +1,4 @@
 import Klogo from "../components/KLogo"
-import NoticeBoard from "../components/NoticeBoard"
 import ScrollArrow from "../components/ScrollArrow"
 import SponsorMarquee from "../components/SponsorMarquee"
 import EventsCarousel from "../components/EventsCarousel"
@@ -10,22 +9,14 @@ import fb from "../assets/fb.svg"
 import tiktok from "../assets/tiktok.svg"
 import yt from "../assets/youtube.svg"
 import disc from "../assets/discord.svg"
-import { useEffect } from "react"
-import { useLocation, useNavigate } from "react-router"
+import { useNavigate } from "react-router"
 import spotify from "../assets/spotify.svg"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
 export default function Home() {
-    const noticeRef = useRef()
-    const location = useLocation();
+    const eventsRef = useRef()
     const navigate = useNavigate();
-
-    useEffect(() => {
-      if (location.state?.scrollToNotices) {
-        noticeRef.current?.scrollIntoView({ behavior: "smooth" });
-      }
-    }, [location]);
 
     return(
     <>
@@ -49,7 +40,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <div className="group relative">
                 <button
-                  onClick={() => navigate("/about", { state: { scrollToJoin: true } })}
+                  onClick={() => navigate("/join")}
                   className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
                 >
                   BECOME A MEMBER
@@ -58,10 +49,10 @@ export default function Home() {
               </div>
               <div className="group relative">
                 <button
-                  onClick={() => noticeRef.current?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => navigate("/events")}
                   className="px-8 py-3 rounded-full text-base font-semibold text-ink bg-white/80 border border-pastel-purple-dark/30 shadow-sm hover:bg-white hover:shadow-md transition-all"
                 >
-                  LATEST NOTICES
+                  OUR EVENTS
                 </button>
                 <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
               </div>
@@ -69,7 +60,7 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 mt-14">
-            <ScrollArrow scrollToRef={noticeRef} />
+            <ScrollArrow scrollToRef={eventsRef} />
           </div>
         </section>
 
@@ -85,25 +76,29 @@ export default function Home() {
           <SponsorMarquee />
         </section>
 
-        {/* NOTICEBOARD + EVENTS */}
+        {/* UPCOMING EVENTS */}
         <section
-            ref={noticeRef}
+            ref={eventsRef}
             className="w-full bg-pastel-soft py-20 px-6 md:px-16"
         >
           <div className="max-w-6xl mx-auto">
-            <div className="mb-10">
-              <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">GET INVOLVED</h2>
-              <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Noticeboard.</h3>
-              <p className="mt-4 text-ink/70 max-w-xl">
-                Everything you need to sign up, get involved, and stay in the loop with KPS.
-              </p>
+            <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">WHAT'S ON</h2>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-ink mt-2">Upcoming Events.</h3>
+                <p className="mt-4 text-ink/70 max-w-xl">
+                  A taste of what's coming up &mdash; see the full calendar for everything KPS has planned.
+                </p>
+              </div>
+              <button
+                onClick={() => navigate("/events")}
+                className="shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
+              >
+                View All Events
+              </button>
             </div>
 
-            <NoticeBoard />
-
-            <div className="mt-16">
-              <EventsCarousel embedded />
-            </div>
+            <EventsCarousel embedded />
           </div>
         </section>
 

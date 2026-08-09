@@ -4,11 +4,12 @@ import Home from './pages/Home'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import About from './pages/About'
-import Events from './pages/Media'
+import Events from './pages/Events'
 import Shop from './pages/Shop'
 import NavBar from './components/NavBar'
 import Spons from './pages/Spons'
 import Newsletter from './pages/Newsletter'
+import Join from './pages/Join'
 
 
 export default function Router() {
@@ -23,10 +24,11 @@ export default function Router() {
                 <Route path='/register' element={<Register />}/>
                 <Route path='/login' element={<Login />}/>
                 <Route path='/about' element={<About />}/>
-                <Route path='/media' element={<Events />}/>
+                <Route path='/events' element={<Events />}/>
                 <Route path='/shop' element={<Shop />}/>
                 <Route path='/spons' element={<Spons />}/>
                 <Route path='/newsletter' element={<Newsletter />}/>
+                <Route path='/join' element={<Join />}/>
             </Routes>
         </>
     )

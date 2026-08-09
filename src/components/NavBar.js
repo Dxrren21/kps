@@ -2,8 +2,6 @@ import { useNavigate, useLocation } from "react-router-dom"
 import { useRef, useState, useEffect, useCallback } from "react"
 import sidebar from "../assets/sidebar.png"
 import logo from '../assets/kpopLogo.png'
-import boy from "../assets/boy.png"
-import girl from "../assets/girl.png"
 
 export default function NavBar() {
     const navigate = useNavigate()
@@ -12,6 +10,7 @@ export default function NavBar() {
     const navItems = [
         { path: "/", label: "Home"},
         { path: "/about", label: "About Us"},
+        { path: "/events", label: "Events"},
         { path: "/spons", label: "Sponsors"},
         { path: "/newsletter", label: "Archives"},
     ]
@@ -72,20 +71,13 @@ export default function NavBar() {
                             ))
                         }
 
-                        <button
-                            className="block py-4 text-lg text-ink/70 hover:text-ink hover:underline hover:underline-offset-8 hover:decoration-pastel-pink-dark shadow-none"
-                            onClick={() => { navigate("/", { state: { scrollToNotices: true } }); toggleVisible(); }}
-                        >
-                            Notices
-                        </button>
-                        <div className="group relative mt-4">
+                        <div className="mt-4">
                             <button
                                 className="px-8 py-3 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg transition-shadow"
-                                onClick={() => { navigate("/about", { state: { scrollToJoin: true } }); toggleVisible(); }}
+                                onClick={() => { navigate("/join"); toggleVisible(); }}
                             >
                                 Join Us
                             </button>
-                            <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                         </div>
                     </section>
                 )
@@ -116,21 +108,14 @@ export default function NavBar() {
                             </button>
                         ))
                     }
-                    <button
-                        className="px-4 py-2 text-base font-semibold rounded-full text-ink/70 hover:text-ink hover:bg-pastel-pink-light transition-colors shadow-none"
-                        onClick={() => navigate("/", { state: { scrollToNotices: true } })}
-                    >
-                        Notices
-                    </button>
                 </div>
 
-                <div className="group relative">
+                <div>
                     <button
                         className="px-6 py-2.5 rounded-full text-base font-semibold text-white bg-gradient-to-r from-pastel-blue-dark via-pastel-pink-dark to-pastel-purple-dark shadow-md hover:shadow-lg hover:scale-105 transition-all"
-                        onClick={() => navigate("/about", { state: { scrollToJoin: true } })}>
+                        onClick={() => navigate("/join")}>
                         Join Us
                     </button>
-                    <img src={boy} alt="" className="absolute top-0 right-0 -translate-y-[60%] w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
                 </div>
             </div>
         </>
