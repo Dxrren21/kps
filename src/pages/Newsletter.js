@@ -1,5 +1,6 @@
 import Footer from "../components/Footer"
 import TimeCapsuleGallery from "../components/TimeCapsuleGallery"
+import DanceVideos from "../components/DanceVideos"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
@@ -35,18 +36,11 @@ export default function Newsletter() {
             <section className="w-full bg-pastel-soft py-16 px-6 flex flex-col items-center">
                 <h2 className="text-sm font-bold tracking-[0.2em] text-pastel-blue-dark">GET MOVING</h2>
                 <h1 className="mt-2 text-3xl md:text-4xl font-extrabold text-ink">Dance</h1>
+                <p className="mt-4 text-ink/70 max-w-xl text-center">
+                    Catch up on our dance workshop covers, straight from our YouTube channel.
+                </p>
 
-                <a
-                    className="group relative mt-8"
-                    href="https://weebly.us4.list-manage.com/subscribe?u=4a561cb09634b5f8d81ef6371&id=f934d5fe68"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button type="button" className="w-[260px] h-[64px] bg-white text-pastel-blue-dark border-2 border-pastel-purple-light hover:border-pastel-purple-dark font-semibold rounded-full text-sm px-5 py-2.5 text-center transition-colors">
-                        Dance Workshop Videos
-                    </button>
-                    <img src={girl} alt="" className="absolute top-0 right-0 -translate-y-[60%] -translate-x-4 w-[60px] h-[60px] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none z-10" />
-                </a>
+                <DanceVideos />
             </section>
 
             <TimeCapsuleGallery />
